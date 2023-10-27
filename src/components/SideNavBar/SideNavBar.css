@@ -1,0 +1,40 @@
+.container__SideNavBar {
+  display: flex;
+  flex-grow: 1;
+}
+
+.ul__SideNavBar {
+  list-style: none;
+  margin-top: 30%;
+}
+
+.a___SideNavBar {
+  display: flex;
+  gap: 5px;
+  text-decoration: none;
+  color: var(--color);
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.dash__SideNavBar {
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #fff;
+  transition: width 100ms;
+}
+
+.selected__SideNavBar {
+  width: 30px;
+}
+
+.a___SideNavBar:hover .dash__SideNavBar {
+  width: 30px;
+}
+
+@media all and (max-width: 1024px) {
+  .container__SideNavBar {
+    display: none;
+  }
+}

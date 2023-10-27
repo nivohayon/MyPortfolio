@@ -1,5 +1,6 @@
 .container__SplitScreen {
   display: flex;
+  flex-direction: column;
   padding: 24px;
   overflow: auto;
   height: 100dvh;
@@ -7,6 +8,7 @@
 
 .sticky_side_container__SplitScreen {
   display: flex;
+  flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -26,11 +28,12 @@
 @media (min-width: 1024px) {
   .container__SplitScreen {
     padding: 96px;
+    flex-direction: row;
   }
 }
 
 @media (min-width: 1400px) {
   .container__SplitScreen {
-    margin: 0 10%;
+    padding: 10%;
   }
 }

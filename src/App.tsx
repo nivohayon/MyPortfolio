@@ -1,17 +1,18 @@
-import GradientBackground from './components/GradientBackground/GradientBackground';
 import SplitScreen from './components/SplitScreen/SplitScreen';
+import { useRef } from 'react';
+import useMouseFlashlight from './hooks/useMouseFlashlight';
 import './App.css';
 
 function App() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  useMouseFlashlight(containerRef);
+
   return (
-    <>
-      <div>
-        <GradientBackground />
-      </div>
-      <main className="app">
+    <main className="app" ref={containerRef}>
+      <div className="app_main">
         <SplitScreen />
-      </main>
-    </>
+      </div>
+    </main>
   );
 }
 

@@ -1,20 +1,25 @@
 .container__Profile {
   display: flex;
   flex-direction: column;
+  margin-bottom: 32px;
 }
 
 .title__Profile {
   font-size: 48px;
   font-weight: 700;
+  text-shadow: 1px 2px 2px #000;
+  cursor: pointer;
 }
 
 .subtitle__Profile {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .description__Profile {
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 400;
   margin-top: 16px;
+  color: rgb(188, 203, 224);
 }
