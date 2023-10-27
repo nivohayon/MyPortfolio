@@ -1,4 +1,5 @@
 import GradientBackground from './components/GradientBackground/GradientBackground';
+import SplitScreen from './components/SplitScreen/SplitScreen';
 import './App.css';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
         <GradientBackground />
       </div>
       <main className="app">
-        <p>Hello World</p>
+        <SplitScreen />
       </main>
     </>
   );

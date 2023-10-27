@@ -1,0 +1,20 @@
+.container__Profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.title__Profile {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.subtitle__Profile {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.description__Profile {
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 16px;
+}

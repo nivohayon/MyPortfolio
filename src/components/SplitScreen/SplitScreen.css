@@ -1,0 +1,36 @@
+.container__SplitScreen {
+  display: flex;
+  padding: 24px;
+  overflow: auto;
+  height: 100dvh;
+}
+
+.sticky_side_container__SplitScreen {
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.scrolly_side_container__SplitScreen {
+  display: flex;
+  height: 300vh;
+}
+
+@media (min-width: 768px) {
+  .container__SplitScreen {
+    padding: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container__SplitScreen {
+    padding: 96px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container__SplitScreen {
+    margin: 0 10%;
+  }
+}
