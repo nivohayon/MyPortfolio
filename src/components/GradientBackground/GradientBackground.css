@@ -1,0 +1,34 @@
+.gradient_background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: linear-gradient(
+    to right top,
+    #002967,
+    #0d458c,
+    #1663b1,
+    #1b83d8,
+    #1ca5ff
+  );
+  background-repeat: no-repeat;
+}
+
+@media all and (min-width: 1024px) {
+  /* START - Mouse cursor flashlight effect - desktop only */
+  .gradient_background::after {
+    content: '';
+    position: absolute;
+    top: calc(var(--y, 0) * 1px - 20vw);
+    left: calc(var(--x, 0) * 1px - 20vw);
+    width: 40vw;
+    height: 40vw;
+    background: radial-gradient(#fff, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .gradient_background:hover::after {
+    opacity: 0.2;
+  }
+  /* END - Mouse cursor flashlight effect - desktop only*/
+}
