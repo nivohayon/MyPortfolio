@@ -4,7 +4,7 @@
 }
 
 .text__Footer {
-  color: rgb(136 147 162);
+  color: var(--grey);
 }
 
 .inline_link__Footer {

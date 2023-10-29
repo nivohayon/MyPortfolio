@@ -25,7 +25,7 @@
 
 .description__Experience {
   font-size: 16px;
-  color: rgb(165, 181, 204);
+  color: var(--grey);
 }
 
 .skills_container__Experience {
@@ -60,5 +60,5 @@
 }
 
 .link_item__Experience:hover {
-  color: var(--green)
+  color: var(--green);
 }

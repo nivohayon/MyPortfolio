@@ -7,6 +7,7 @@
 
 .text__About {
   line-height: 24px;
+  color: var(--grey);
 }
 
 @media all and (min-width: 1024px) {
