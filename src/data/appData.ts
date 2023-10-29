@@ -16,6 +16,8 @@ export const appData = {
   github_link: 'https://github.com/nivohayon',
   instagram_link: 'https://instagram.com/nivohayon1582',
   linkedin_link: 'https://www.linkedin.com/in/nivohayon',
+  resume_link:
+    'https://drive.google.com/file/d/1CzqmKvHHFfM5zRVztqrG65kTg5QlxlRM/view?usp=drive_link',
 
   // Experience
   titleExperience: 'Experience',

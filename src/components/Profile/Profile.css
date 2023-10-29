@@ -26,3 +26,26 @@
   color: rgb(188, 203, 224);
   max-width: 300px;
 }
+
+.view_resume_container__Profile {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color);
+}
+
+.arrow_icon__Profile {
+  margin-left: 5px;
+  transition: margin 100ms linear;
+}
+
+.view_resume_container__Profile:hover .arrow_icon__Profile {
+  margin-left: 15px;
+}
+
+.view_resume_container__Profile:hover .view_resume_text__Profile {
+  text-decoration: underline rgb(94, 234, 212);
+  text-underline-offset: 5px;
+}
