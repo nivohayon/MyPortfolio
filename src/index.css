@@ -6,6 +6,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   --color: rgba(226, 232, 240, 0.87);
+  --green: rgb(94, 234, 212);
   color: var(--color);
 }
 

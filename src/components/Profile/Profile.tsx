@@ -22,7 +22,16 @@ function Profile({ containerRef }: ProfileProps) {
       <h1 className="title__Profile noSelect" onClick={handleTitleClick}>
         {appData.nameProfile}
       </h1>
-      <h3 className="subtitle__Profile">{appData.subtitleProfile}</h3>
+      <h3 className="subtitle__Profile">
+        {appData.subtitleProfile}
+        <a
+          href={appData.workPlaceLink}
+          target="_blank"
+          className="work_place_name__Profile"
+        >
+          {appData.workPlaceName}
+        </a>
+      </h3>
       <h4 className="description__Profile">{appData.descriptionProfile}</h4>
       <Link
         reloadDocument

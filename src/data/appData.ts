@@ -1,7 +1,9 @@
 export const appData = {
   // Profile
   nameProfile: 'Niv Ohayon',
-  subtitleProfile: 'Fullstack Developer at MSAPPS',
+  subtitleProfile: 'Fullstack Developer at ',
+  workPlaceName: 'MSAPPS',
+  workPlaceLink: 'https://msapps.mobi/',
   descriptionProfile: 'I Build applications for web and mobile from scratch ',
 
   // About

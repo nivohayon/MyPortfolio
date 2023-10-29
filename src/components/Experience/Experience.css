@@ -38,7 +38,7 @@
   background-color: rgba(94, 234, 212, 0.2);
   padding: 5px 10px;
   border-radius: 50px;
-  color: rgb(94, 234, 212);
+  color: var(--green);
 }
 
 .links_container__Experience {
@@ -60,5 +60,5 @@
 }
 
 .link_item__Experience:hover {
-  color: rgb(94, 234, 212);
+  color: var(--green)
 }

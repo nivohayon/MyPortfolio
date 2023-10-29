@@ -19,6 +19,15 @@
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
+.work_place_name__Profile {
+  text-decoration: none;
+  color: var(--color);
+}
+
+.work_place_name__Profile:hover {
+  color: var(--green);
+}
+
 .description__Profile {
   font-size: 18px;
   font-weight: 400;
@@ -46,6 +55,6 @@
 }
 
 .view_resume_container__Profile:hover .view_resume_text__Profile {
-  text-decoration: underline rgb(94, 234, 212);
+  text-decoration: underline var(--green);
   text-underline-offset: 5px;
 }
