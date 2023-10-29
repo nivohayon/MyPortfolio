@@ -1,13 +1,11 @@
 .app {
-  position: fixed;
-  inset: 0;
   background-image: linear-gradient(
     to right top,
-    #002967,
-    #0d458c,
-    #1663b1,
-    #1b83d8,
-    #1ca5ff
+    #001f4f,
+    #0a3a7a,
+    #0e448f,
+    #0a3a7a,
+    #055274
   );
   background-repeat: no-repeat;
 }
@@ -26,7 +24,7 @@
     left: calc(var(--x, 0) * 1px - 20vw);
     width: 40vw;
     height: 40vw;
-    background: radial-gradient(#fff, transparent 70%);
+    background: radial-gradient(rgba(215, 215, 215, 0.5), transparent 70%);
     opacity: 0;
     transition: opacity 0.2s;
   }

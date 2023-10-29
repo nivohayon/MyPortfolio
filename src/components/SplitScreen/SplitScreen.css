@@ -4,19 +4,18 @@
   padding: 24px;
   overflow: auto;
   height: 100dvh;
+  scroll-behavior: smooth;
 }
 
 .sticky_side_container__SplitScreen {
   display: flex;
   flex-direction: column;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 
 .scrolly_side_container__SplitScreen {
   display: flex;
-  height: 300vh;
+  flex-direction: column;
+  gap: 48px;
 }
 
 @media (min-width: 768px) {
@@ -29,6 +28,18 @@
   .container__SplitScreen {
     padding: 96px;
     flex-direction: row;
+    justify-content: center;
+  }
+  .sticky_side_container__SplitScreen {
+    flex: 1;
+    max-width: 512px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  .scrolly_side_container__SplitScreen {
+    flex: 1;
+    max-width: 512px;
   }
 }
 

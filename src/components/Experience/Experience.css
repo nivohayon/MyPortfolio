@@ -1,0 +1,63 @@
+.container__Experience {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience_container__Experience {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.from_until__Experience {
+  color: rgb(150, 166, 189);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.title__Experience {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color);
+}
+
+.description__Experience {
+  font-size: 16px;
+  color: rgb(165, 181, 204);
+}
+
+.skills_container__Experience {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill_tag__Experience {
+  background-color: rgba(94, 234, 212, 0.2);
+  padding: 5px 10px;
+  border-radius: 50px;
+  color: rgb(94, 234, 212);
+}
+
+.links_container__Experience {
+  display: flex;
+  gap: 20px;
+}
+
+.link_item_container__Experience {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.link_item_container__Experience:hover .link_item__Experience {
+  text-decoration: underline;
+}
+
+.link_item__Experience {
+  text-decoration: none;
+  color: var(--color);
+}

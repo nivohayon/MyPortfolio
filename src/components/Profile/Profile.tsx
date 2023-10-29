@@ -1,16 +1,23 @@
-import appData from '../../data/appData.json';
-import useAppNavigation from '../../hooks/useAppNavigation';
+import { useNavigate } from 'react-router-dom';
+import { appData } from '../../data/appData';
 import './Profile.css';
 
-function Profile() {
-  const navigate = useAppNavigation();
+type ProfileProps = {
+  containerRef: React.RefObject<HTMLDivElement>;
+};
+
+function Profile({ containerRef }: ProfileProps) {
+  const navigate = useNavigate();
   const handleTitleClick = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollTo(0, 0);
+    }
     navigate('/');
   };
 
   return (
     <div className="container__Profile">
-      <h1 className="title__Profile" onClick={handleTitleClick}>
+      <h1 className="title__Profile noSelect" onClick={handleTitleClick}>
         {appData.nameProfile}
       </h1>
       <h3 className="subtitle__Profile">{appData.subtitleProfile}</h3>

@@ -1,0 +1,16 @@
+.container__About {
+  display: flex;
+  flex-direction: column;
+  margin-top: 96px;
+  gap: 20px;
+}
+
+.text__About {
+  line-height: 24px;
+}
+
+@media all and (min-width: 1024px) {
+  .container__About {
+    margin-top: 0;
+  }
+}
