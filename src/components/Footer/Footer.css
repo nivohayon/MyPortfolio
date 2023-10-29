@@ -1,0 +1,33 @@
+.container__Footer {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.text__Footer {
+  color: rgb(136 147 162);
+}
+
+.inline_link__Footer {
+  text-decoration: none;
+  color: var(--color);
+  font-weight: 500;
+  transition: color 300ms;
+}
+
+.inline_link__Footer:hover {
+  color: rgb(94, 234, 212);
+}
+
+@media (min-width: 768px) {
+  .container__Footer {
+    padding-bottom: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container__Footer {
+    padding-bottom: 96px;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

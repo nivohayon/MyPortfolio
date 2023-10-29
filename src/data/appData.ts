@@ -92,4 +92,20 @@ export const appData = {
       skills: ['React', 'React Native', 'SCSS', 'Typescript', 'ExpressJS'],
     },
   ],
+
+  // Footer
+  inspiredByText: "Brittany Chiang's Website",
+  inspiredByLink: 'https://brittanychiang.com/',
+  vscodeText: 'Visual Studio Code',
+  vscodeLink: 'https://code.visualstudio.com/',
+  reactText: 'React',
+  reactLink: 'https://react.dev/',
+  tsText: 'Typescript',
+  tsLink: 'https://www.typescriptlang.org/',
+  viteText: 'Vite',
+  viteLink: 'https://vitejs.dev/',
+  ghPagesText: 'GitHub Pages',
+  ghPagesLink: 'https://pages.github.com/',
+  interText: 'Inter',
+  interLink: 'https://fonts.google.com/specimen/Inter',
 };

@@ -4,6 +4,7 @@ import Experience from '../Experience/Experience';
 import Profile from '../Profile/Profile';
 import SideNavBar from '../SideNavBar/SideNavBar';
 import SocialLinks from '../SocialLinks/SocialLinks';
+import Footer from '../Footer/Footer';
 import './SplitScreen.css';
 
 function SplitScreen() {
@@ -19,6 +20,7 @@ function SplitScreen() {
       <div className="scrolly_side_container__SplitScreen">
         <About />
         <Experience />
+        <Footer />
       </div>
     </div>
   );

@@ -1,12 +1,5 @@
 .app {
-  background-image: linear-gradient(
-    to right top,
-    #001f4f,
-    #0a3a7a,
-    #0e448f,
-    #0a3a7a,
-    #055274
-  );
+  background-color: rgb(15, 23, 42);
   background-repeat: no-repeat;
 }
 
@@ -20,11 +13,12 @@
   .app:after {
     content: '';
     position: absolute;
-    top: calc(var(--y, 0) * 1px - 20vw);
-    left: calc(var(--x, 0) * 1px - 20vw);
-    width: 40vw;
-    height: 40vw;
-    background: radial-gradient(rgba(215, 215, 215, 0.5), transparent 70%);
+    top: calc(var(--y, 0) * 1px - 30vw);
+    left: calc(var(--x, 0) * 1px - 30vw);
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(rgba(29, 78, 216, 0.7), transparent 70%);
+    /* radial-gradient(600px at 1310px 2627px, rgba(29, 78, 216, 0.15), transparent 80%) */
     opacity: 0;
     transition: opacity 0.2s;
   }

@@ -12,7 +12,7 @@ type LinkItemProps = {
 };
 
 const SkillTag = ({ title }: SkillTagProps) => {
-  return <span className="skill_tag__Experience noSelect">{title}</span>;
+  return <span className="skill_tag__Experience">{title}</span>;
 };
 
 const LinkItem = ({ title, url }: LinkItemProps) => {

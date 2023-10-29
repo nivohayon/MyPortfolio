@@ -53,11 +53,12 @@
   cursor: pointer;
 }
 
-.link_item_container__Experience:hover .link_item__Experience {
-  text-decoration: underline;
-}
-
 .link_item__Experience {
   text-decoration: none;
   color: var(--color);
+  transition: color 300ms;
+}
+
+.link_item__Experience:hover {
+  color: rgb(94, 234, 212);
 }
