@@ -1,0 +1,21 @@
+.container__NotFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  gap: 20px;
+}
+.number__NotFound {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--grey);
+}
+.divider__NotFound {
+  height: 45px;
+  width: 0.1px;
+  background-color: var(--grey);
+}
+.text__NotFound {
+  font-size: 14px;
+  color: var(--grey);
+}

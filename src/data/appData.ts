@@ -110,4 +110,9 @@ export const appData = {
   ghPagesLink: 'https://pages.github.com/',
   interText: 'Inter',
   interLink: 'https://fonts.google.com/specimen/Inter',
+
+  // Not Found
+  docTitleNotFound: '404 Not Found',
+  numberNotFound: '404',
+  textNotFound: 'This page could not be found.',
 };

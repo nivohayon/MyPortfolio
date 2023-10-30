@@ -1,0 +1,30 @@
+.background_provider {
+  background-color: rgb(15, 23, 42);
+  background-repeat: no-repeat;
+}
+
+.app_main {
+  position: relative;
+  z-index: 1;
+}
+
+@media all and (min-width: 1024px) {
+  /* START - Mouse cursor flashlight effect - desktop only */
+  .background_provider:after {
+    content: '';
+    position: absolute;
+    top: calc(var(--y, 0) * 1px - 30vw);
+    left: calc(var(--x, 0) * 1px - 30vw);
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(rgba(29, 78, 216, 0.7), transparent 70%);
+    /* radial-gradient(600px at 1310px 2627px, rgba(29, 78, 216, 0.15), transparent 80%) */
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .background_provider:hover::after {
+    opacity: 0.2;
+  }
+  /* END - Mouse cursor flashlight effect - desktop only*/
+}
