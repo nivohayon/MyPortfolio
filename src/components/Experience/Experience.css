@@ -43,6 +43,7 @@
   width: 18px;
   height: 18px;
   transform: rotateZ(-45deg);
+  transition: all 300ms;
 }
 
 .experience_container__Experience:hover .arrow_icon__Experience {
