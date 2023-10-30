@@ -38,7 +38,12 @@ function Experience() {
       <h3 id="experience">{appData.titleExperience}</h3>
       {appData.experiences.map((item) => {
         return (
-          <div key={item.id} className="experience_container__Experience">
+          <a
+            key={item.id}
+            href={item.mainLink}
+            target="_blank"
+            className="experience_container__Experience"
+          >
             <span className="from_until__Experience">
               {item.from} - {item.until}
             </span>
@@ -69,7 +74,7 @@ function Experience() {
                   })}
               </div>
             </div>
-          </div>
+          </a>
         );
       })}
     </article>

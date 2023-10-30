@@ -31,6 +31,7 @@ export const appData = {
       title: 'Fullstack developer',
       description:
         'Developed and styled interactive web apps for Apple Music, including the UI of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.',
+      mainLink: 'https://www.github.com/example_main_link',
       links: [
         {
           title: 'Github',
@@ -54,6 +55,7 @@ export const appData = {
       title: 'Fullstack developer',
       description:
         'Developed and styled interactive web apps for Apple Music, including the UI of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.',
+      mainLink: 'https://www.github.com/example_main_link',
       links: [
         {
           title: 'Github',
@@ -77,6 +79,7 @@ export const appData = {
       title: 'Fullstack developer',
       description:
         'Developed and styled interactive web apps for Apple Music, including the UI of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.',
+      mainLink: 'https://www.github.com/example_main_link',
       links: [
         {
           title: 'Github',
