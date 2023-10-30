@@ -98,6 +98,30 @@ export const appData = {
     },
   ],
 
+  // Projects
+  titleProjects: 'Projects',
+  projects: [
+    {
+      previewUrl: '',
+      title: 'My Store',
+      description: 'A website for posting second hand products for sale.',
+      skills: ['React', 'SCSS', '.NET Core', 'MSSQL'],
+    },
+    {
+      previewUrl: '',
+      title: 'Pantry Recipes',
+      description: 'Find recipes based on what you have in the kitchen.',
+      skills: ['React Native', '.NET Core', 'MSSQL'],
+    },
+    {
+      previewUrl: '',
+      title: 'Pantry Recipes',
+      description:
+        'Yea i know i did the same app twice... I did it because i had 2 final projects i needed to do i 2 different majors and i liked my idea very much so i decided to stick with it.',
+      skills: ['Java For Android', 'Firebase'],
+    },
+  ],
+
   // Footer
   inspiredByText: "Brittany Chiang's Website",
   inspiredByLink: 'https://brittanychiang.com/',

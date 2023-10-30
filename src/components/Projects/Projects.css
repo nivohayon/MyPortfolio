@@ -1,0 +1,4 @@
+.container__Projects {
+  display: flex;
+  flex-direction: column;
+}
