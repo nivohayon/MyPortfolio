@@ -1,36 +1,8 @@
-import LinkChainSVG from '../../assets/link_chain.svg?react';
 import ArrowIconSVG from '../../assets/arrow_icon.svg?react';
-
 import { appData } from '../../data/appData';
+import LinkItem from '../LinkItem/LinkItem';
+import SkillTag from '../SkillTag/SkillTag';
 import './Experience.css';
-
-type SkillTagProps = {
-  title: string;
-};
-
-type LinkItemProps = {
-  title: string;
-  url: string;
-};
-
-const SkillTag = ({ title }: SkillTagProps) => {
-  return <span className="skill_tag__Experience">{title}</span>;
-};
-
-const LinkItem = ({ title, url }: LinkItemProps) => {
-  const handleOpenLink = () => {
-    window.open(url, '_blank');
-  };
-
-  return (
-    <div onClick={handleOpenLink} className="link_item_container__Experience">
-      <LinkChainSVG className="link_chain__Experience" />
-      <a className="link_item__Experience" href={url} target="_blank">
-        {title}
-      </a>
-    </div>
-  );
-};
 
 function Experience() {
   return (

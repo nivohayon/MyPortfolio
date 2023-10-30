@@ -1,0 +1,8 @@
+.title__SkillTag {
+  background-color: rgba(94, 234, 212, 0.2);
+  padding: 5px 10px;
+  border-radius: 50px;
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 300;
+}
