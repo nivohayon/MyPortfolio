@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { appData } from '../../data/appData';
-import ArrowIconSVG from '../../assets/arrow_icon.svg';
+import ArrowIconSVG from '../../assets/arrow_icon.svg?react';
 import './Profile.css';
 
 type ProfileProps = {
@@ -39,13 +39,7 @@ function Profile({ containerRef }: ProfileProps) {
         className="view_resume_container__Profile"
       >
         <span className="view_resume_text__Profile">View Full Resumé</span>
-        <img
-          className="arrow_icon__Profile"
-          src={ArrowIconSVG}
-          width={16}
-          height={16}
-          alt="arrow icon"
-        />
+        <ArrowIconSVG className="arrow_icon__Profile" />
       </Link>
     </div>
   );

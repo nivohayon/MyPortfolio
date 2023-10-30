@@ -8,9 +8,9 @@ export const appData = {
 
   // About
   text1About:
-    'Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, a start-up, a student-led design studio, and a huge corporation.',
+    "Ever since I can remember I was always curious about how things work behind the scenes. My passion for programming started from watching YouTubers who did amazing things using programming so I decided its time to become a programmer. Fast-forward to 2019, I started learning Software Engineering in Ruppin technological college. In 2021 I've graduated with an average grade of 90 and got my diploma.",
   text2About:
-    "My main focus these days is building products and leading projects for our clients at Upstatement. In my free time I've also released an online video course that covers everything you need to know to build a web app with the Spotify API.",
+    'My main focus these days is learning electronics and embedded. In my free time i am working',
   text3About:
     'When I’m not at the computer, I’m usually rock climbing, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds Korok seeds.',
 

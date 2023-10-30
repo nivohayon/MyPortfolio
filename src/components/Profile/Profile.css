@@ -46,6 +46,8 @@
 }
 
 .arrow_icon__Profile {
+  width: 16px;
+  height: 16px;
   margin-left: 5px;
   transition: margin 100ms linear;
 }

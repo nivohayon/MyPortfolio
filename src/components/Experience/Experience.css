@@ -34,10 +34,30 @@
   gap: 15px;
 }
 
+.arrow_and_title_container__Experience {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow_icon__Experience {
+  width: 18px;
+  height: 18px;
+  transform: rotateZ(-45deg);
+}
+
+.experience_container__Experience:hover .arrow_icon__Experience {
+  transform: translateY(-5px) translateX(5px) rotateZ(-45deg);
+  fill: var(--green);
+}
+
 .title__Experience {
   font-size: 18px;
   font-weight: 500;
   color: var(--color);
+}
+
+.experience_container__Experience:hover .title__Experience {
+  color: var(--green);
 }
 
 .description__Experience {
@@ -71,15 +91,19 @@
   align-items: center;
   gap: 5px;
   cursor: pointer;
+  transition: all 300ms;
+}
+
+.link_item_container__Experience:hover .link_chain__Experience {
+  fill: var(--green);
 }
 
 .link_item__Experience {
   text-decoration: none;
   color: var(--color);
-  transition: color 300ms;
 }
 
-.link_item__Experience:hover {
+.link_item_container__Experience:hover .link_item__Experience {
   color: var(--green);
 }
 

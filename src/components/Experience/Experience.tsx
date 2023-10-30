@@ -1,4 +1,6 @@
-import LinkChainSVG from '../../assets/link_chain.svg';
+import LinkChainSVG from '../../assets/link_chain.svg?react';
+import ArrowIconSVG from '../../assets/arrow_icon.svg?react';
+
 import { appData } from '../../data/appData';
 import './Experience.css';
 
@@ -22,7 +24,7 @@ const LinkItem = ({ title, url }: LinkItemProps) => {
 
   return (
     <div onClick={handleOpenLink} className="link_item_container__Experience">
-      <img src={LinkChainSVG} alt="link chain" aria-hidden />
+      <LinkChainSVG className="link_chain__Experience" />
       <a className="link_item__Experience" href={url} target="_blank">
         {title}
       </a>
@@ -41,7 +43,10 @@ function Experience() {
               {item.from} - {item.until}
             </span>
             <div className="data_container">
-              <span className="title__Experience">{item.title}</span>
+              <div className="arrow_and_title_container__Experience">
+                <span className="title__Experience">{item.title}</span>
+                <ArrowIconSVG className="arrow_icon__Experience" />
+              </div>
               <span className="description__Experience">
                 {item.description}
               </span>
