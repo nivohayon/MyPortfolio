@@ -12,7 +12,7 @@ const BackgroundProvider = ({ children }: BackgroundProviderProps) => {
 
   return (
     <div className="background_provider" ref={containerRef}>
-      <main className="app_main">{children}</main>
+      {children}
     </div>
   );
 };

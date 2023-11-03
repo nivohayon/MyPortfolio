@@ -4,6 +4,7 @@ import ArrowIconSVG from '../../assets/arrow_icon.svg?react';
 import { IExperience, IProject } from '../../types';
 import { useNavigate } from 'react-router-dom';
 import { routes } from '../../routes/routes';
+import ProjectPlaceholderImg from '../../assets/project_placeholder.jpg';
 import './Card.css';
 
 type CardProps = {
@@ -31,7 +32,9 @@ function Card({ type, data }: CardProps) {
       ) : (
         <div className="preview_container">
           <img
-            src={data.previewUrl}
+            src={
+              data?.previewUrl?.length ? data.previewUrl : ProjectPlaceholderImg
+            }
             className="preview_img__Card"
             alt="project preview"
           />
