@@ -22,3 +22,21 @@
   text-decoration: underline var(--green);
   text-underline-offset: 5px;
 }
+
+.reversed_link__LinkWithArrow {
+  flex-direction: row-reverse;
+}
+
+.reversed_arrow_icon___LinkWithArrow {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  right: 5px;
+  transition: right 100ms linear;
+  rotate: 180deg;
+}
+
+.view_resume_container__LinkWithArrow:hover
+  .reversed_arrow_icon___LinkWithArrow {
+  right: 15px;
+}

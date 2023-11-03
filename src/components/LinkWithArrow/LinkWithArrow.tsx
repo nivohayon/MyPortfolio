@@ -6,20 +6,28 @@ import './LinkWithArrow.css';
 type LinkWithArrowProps = {
   to: string;
   label: string;
+  reversed?: boolean;
   className?: string;
 };
 
-function LinkWithArrow({ to, label, className }: LinkWithArrowProps) {
+function LinkWithArrow({ to, label, reversed, className }: LinkWithArrowProps) {
   return (
     <Link
       to={to}
       className={combineClasses(
         'view_resume_container__LinkWithArrow',
-        className
+        className ?? '',
+        reversed ? 'reversed_link__LinkWithArrow' : ''
       )}
     >
       <span className="view_resume_text__LinkWithArrow">{label}</span>
-      <ArrowIconSVG className="arrow_icon__LinkWithArrow" />
+      <ArrowIconSVG
+        className={
+          reversed
+            ? 'reversed_arrow_icon___LinkWithArrow'
+            : 'arrow_icon__LinkWithArrow'
+        }
+      />
     </Link>
   );
 }

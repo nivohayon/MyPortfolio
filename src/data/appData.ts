@@ -149,6 +149,9 @@ export const appData = {
     },
   ],
 
+  // Archive
+  backToHomeLinkText: 'Back Home',
+
   // Footer
   inspiredByText: "Brittany Chiang's Website",
   inspiredByLink: 'https://brittanychiang.com/',
