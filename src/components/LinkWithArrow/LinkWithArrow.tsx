@@ -21,6 +21,7 @@ function LinkWithArrow({
   return (
     <Link
       to={to}
+      reloadDocument
       className={combineClasses(
         'view_resume_container__LinkWithArrow',
         className ?? '',
