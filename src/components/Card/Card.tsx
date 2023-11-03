@@ -1,22 +1,11 @@
 import LinkItem from '../LinkItem/LinkItem';
 import SkillTag from '../SkillTag/SkillTag';
 import ArrowIconSVG from '../../assets/arrow_icon.svg?react';
+import { IExperience } from '../../types';
 import './Card.css';
 
 type CardProps = {
-  experience: {
-    id: number;
-    from: string;
-    until: string;
-    title: string;
-    description: string;
-    cardClickLink: string;
-    links: {
-      title: string;
-      url: string;
-    }[];
-    skills: string[];
-  };
+  experience: IExperience;
 };
 
 function Card({ experience }: CardProps) {
@@ -39,9 +28,7 @@ function Card({ experience }: CardProps) {
           <span className="title__Card">{experience.title}</span>
           <ArrowIconSVG className="arrow_icon__Card" />
         </div>
-        <span className="description__Card">
-          {experience.description}
-        </span>
+        <span className="description__Card">{experience.description}</span>
         <div className="links_container__Card">
           {experience.links.length > 0 &&
             experience.links.map((link) => {
