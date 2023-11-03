@@ -1,0 +1,25 @@
+.view_resume_container__LinkWithArrow {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color);
+  width: fit-content;
+}
+
+.arrow_icon__LinkWithArrow {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  transition: margin 100ms linear;
+}
+
+.view_resume_container__LinkWithArrow:hover .arrow_icon__LinkWithArrow {
+  margin-left: 15px;
+}
+
+.view_resume_container__LinkWithArrow:hover .view_resume_text__LinkWithArrow {
+  text-decoration: underline var(--green);
+  text-underline-offset: 5px;
+}

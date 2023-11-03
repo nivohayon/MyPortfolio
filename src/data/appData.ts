@@ -5,6 +5,7 @@ export const appData = {
   workPlaceName: 'MSAPPS',
   workPlaceLink: 'https://msapps.mobi/',
   descriptionProfile: 'I Build applications for web and mobile from scratch ',
+  viewFullResumeText: 'View Full Resumé',
 
   // About
   text1About:

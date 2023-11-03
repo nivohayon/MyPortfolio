@@ -1,7 +1,7 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { appData } from '../../data/appData';
-import ArrowIconSVG from '../../assets/arrow_icon.svg?react';
 import { routes } from '../../routes/routes';
+import LinkWithArrow from '../LinkWithArrow/LinkWithArrow';
 import './Profile.css';
 
 type ProfileProps = {
@@ -34,14 +34,7 @@ function Profile({ containerRef }: ProfileProps) {
         </a>
       </h3>
       <h4 className="description__Profile">{appData.descriptionProfile}</h4>
-      <Link
-        reloadDocument
-        to="/resume.pdf"
-        className="view_resume_container__Profile"
-      >
-        <span className="view_resume_text__Profile">View Full Resumé</span>
-        <ArrowIconSVG className="arrow_icon__Profile" />
-      </Link>
+      <LinkWithArrow to="/resume.pdf" label={appData.viewFullResumeText} />
     </div>
   );
 }
