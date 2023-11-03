@@ -11,3 +11,12 @@ export interface IExperience {
   }[];
   skills: string[];
 }
+
+export interface IProject {
+  id: number;
+  previewUrl: string;
+  title: string;
+  description: string;
+  skills: string[];
+  cardClickLink: string;
+}
