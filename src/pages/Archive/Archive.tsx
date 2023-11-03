@@ -1,7 +1,9 @@
 import LinkWithArrow from '../../components/LinkWithArrow/LinkWithArrow';
 import { appData } from '../../data/appData';
 import { routes } from '../../routes/routes';
+import ArrowIconSVG from '../../assets/arrow_icon.svg?react';
 import './Archive.css';
+import SkillTag from '../../components/SkillTag/SkillTag';
 
 function Archive() {
   return (
@@ -26,11 +28,37 @@ function Archive() {
           {appData.projects.map((project) => {
             return (
               <tr key={project.id}>
-                <td>{project.year}</td>
-                <td>{project.title}</td>
-                <td>{project.madeAt}</td>
-                <td>{project.skills}</td>
-                <td>{project.mainLink}</td>
+                <td>
+                  <span className="year_text__Archive">{project.year}</span>
+                </td>
+                <td>
+                  <a
+                    className="title_text_container__Archive"
+                    href={project.mainLink}
+                    target="_blank"
+                  >
+                    <span className="title_text__Archive">{project.title}</span>
+                    <ArrowIconSVG className="title_text_arrow__Archive" />
+                  </a>
+                </td>
+                <td>
+                  <span className="madeAt_text__Archive">{project.madeAt}</span>
+                </td>
+                <td>
+                  <div className="skill_tags_container__Archive">
+                    {project.skills.map((skill) => (
+                      <SkillTag key={skill} title={skill} />
+                    ))}
+                  </div>
+                </td>
+                <td>
+                  <div className="mainLink_container__Archive">
+                    <span className="mainLink_text__Archive">
+                      {project.mainLink}
+                    </span>
+                    <ArrowIconSVG className="mainLink_arrow_icon__Archive" />
+                  </div>
+                </td>
               </tr>
             );
           })}

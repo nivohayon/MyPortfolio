@@ -30,17 +30,127 @@ tr:last-child {
 td,
 th {
   text-align: left;
-  padding: 16px;
+  padding: 20px 16px 24px 12px;
+}
+
+th:nth-child(3),
+td:nth-child(3),
+th:nth-child(4),
+td:nth-child(4) {
+  display: none;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+  display: none;
+}
+
+.year_text__Archive {
+  color: var(--grey);
+  font-size: 14px;
+}
+
+.title_text_container__Archive {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.title_text__Archive {
+  font-weight: 800;
+  color: var(--color);
+}
+
+.title_text_container__Archive:hover .title_text__Archive {
+  color: var(--green);
+}
+
+.title_text_arrow__Archive {
+  width: 16px;
+  height: 16px;
+  transform: rotateZ(-45deg);
+  transition: all 300ms;
+}
+
+.title_text_container__Archive:hover .title_text_arrow__Archive {
+  transform: translateY(-3px) translateX(3px) rotateZ(-45deg);
+  fill: var(--green);
+}
+
+.madeAt_text__Archive {
+  color: var(--grey);
+}
+
+.skill_tags_container__Archive {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mainLink_container__Archive {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.mainLink_container__Archive:hover .mainLink_arrow_icon__Archive {
+  transform: translateY(-3px) translateX(3px) rotateZ(-45deg);
+  fill: var(--green);
+}
+
+.mainLink_container__Archive:hover .mainLink_text__Archive {
+  color: var(--green);
+}
+
+.mainLink_text__Archive {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mainLink_arrow_icon__Archive {
+  width: 14px;
+  height: 14px;
+  transform: rotateZ(-45deg);
+  transition: all 300ms;
 }
 
 @media (min-width: 768px) {
   .container__Archive {
     padding: 48px;
   }
+
+  th:nth-child(5),
+  td:nth-child(5) {
+    display: table-cell;
+  }
+
+  .title_text_container__Archive {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .title_text__Archive:hover {
+    color: unset;
+  }
+
+  .title_text_arrow__Archive {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
   .container__Archive {
     padding: 96px;
+  }
+
+  th:nth-child(3),
+  td:nth-child(3),
+  th:nth-child(4),
+  td:nth-child(4) {
+    display: table-cell;
   }
 }
