@@ -1,0 +1,10 @@
+.container__ComingSoon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.text__ComingSoon {
+  font-size: 18px;
+  color: var(--grey);
+}

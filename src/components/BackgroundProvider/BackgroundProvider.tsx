@@ -11,9 +11,9 @@ const BackgroundProvider = ({ children }: BackgroundProviderProps) => {
   useMouseFlashlight(containerRef);
 
   return (
-    <main className="background_provider" ref={containerRef}>
-      <div className="app_main">{children}</div>
-    </main>
+    <div className="background_provider" ref={containerRef}>
+      <main className="app_main">{children}</main>
+    </div>
   );
 };
 

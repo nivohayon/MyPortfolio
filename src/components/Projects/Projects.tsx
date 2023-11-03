@@ -1,15 +1,13 @@
 import { appData } from '../../data/appData';
+import { routes } from '../../routes/routes';
+import Card from '../Card/Card';
 
 function Projects() {
   return (
     <div className="container__Projects">
-      <h3 id="experience">{appData.titleProjects}</h3>
+      <h3 id={routes.Projects}>{appData.titleProjects}</h3>
       {appData.projects.map((project) => {
-        return (
-          <div key={project.id} className="project_container__Projects">
-            <h4>{project.title}</h4>
-          </div>
-        );
+        return <Card key={project.id} type="projects" data={project} />;
       })}
     </div>
   );

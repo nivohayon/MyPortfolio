@@ -1,5 +1,4 @@
-import SplitScreen from './components/SplitScreen/SplitScreen';
-import './App.css';
+import SplitScreen from './pages/SplitScreen/SplitScreen';
 
 function App() {
   return <SplitScreen />;

@@ -1,7 +1,8 @@
 import { useLocation } from 'react-router-dom';
+import { routes } from '../../routes/routes';
 import './SideNavBar.css';
 
-const navItems = ['about', 'experience', 'projects'];
+const navItems = [routes.About, routes.Experience, routes.Projects];
 
 function SideNavBar() {
   const { hash } = useLocation();

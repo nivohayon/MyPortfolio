@@ -148,4 +148,7 @@ export const appData = {
   docTitleNotFound: '404 Not Found',
   numberNotFound: '404',
   textNotFound: 'This page could not be found.',
+
+  // Coming Soon
+  textComingSoon: 'Coming Soon',
 };

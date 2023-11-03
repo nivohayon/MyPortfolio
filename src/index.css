@@ -24,6 +24,13 @@ body {
   scroll-behavior: smooth;
 }
 
+html,
+body,
+#root,
+.app_main {
+  height: 100%;
+}
+
 .noSelect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */

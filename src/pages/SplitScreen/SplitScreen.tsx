@@ -1,11 +1,11 @@
 import { useRef } from 'react';
-import Profile from '../Profile/Profile';
-import SideNavBar from '../SideNavBar/SideNavBar';
-import SocialLinks from '../SocialLinks/SocialLinks';
-import About from '../About/About';
-import Experience from '../Experience/Experience';
-import Projects from '../Projects/Projects';
-import Footer from '../Footer/Footer';
+import Profile from '../../components/Profile/Profile';
+import SideNavBar from '../../components/SideNavBar/SideNavBar';
+import SocialLinks from '../../components/SocialLinks/SocialLinks';
+import About from '../../components/About/About';
+import Experience from '../../components/Experience/Experience';
+import Projects from '../../components/Projects/Projects';
+import Footer from '../../components/Footer/Footer';
 import './SplitScreen.css';
 
 function SplitScreen() {

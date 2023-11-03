@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { appData } from '../../data/appData';
 import ArrowIconSVG from '../../assets/arrow_icon.svg?react';
+import { routes } from '../../routes/routes';
 import './Profile.css';
 
 type ProfileProps = {
@@ -14,7 +15,7 @@ function Profile({ containerRef }: ProfileProps) {
     if (containerRef.current) {
       containerRef.current.scrollTo(0, 0);
     }
-    navigate('/');
+    navigate(routes.Home);
   };
 
   return (

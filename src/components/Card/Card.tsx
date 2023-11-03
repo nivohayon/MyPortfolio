@@ -2,6 +2,8 @@ import LinkItem from '../LinkItem/LinkItem';
 import SkillTag from '../SkillTag/SkillTag';
 import ArrowIconSVG from '../../assets/arrow_icon.svg?react';
 import { IExperience, IProject } from '../../types';
+import { useNavigate } from 'react-router-dom';
+import { routes } from '../../routes/routes';
 import './Card.css';
 
 type CardProps = {
@@ -10,9 +12,13 @@ type CardProps = {
 };
 
 function Card({ type, data }: CardProps) {
+  const navigate = useNavigate();
+
   const handleCardClick = () => {
     if (data.cardClickLink) {
       window.open(data.cardClickLink, '_blank');
+    } else {
+      navigate(routes.ComingSoon);
     }
   };
 
