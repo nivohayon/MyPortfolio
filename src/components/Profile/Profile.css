@@ -43,6 +43,7 @@
   cursor: pointer;
   text-decoration: none;
   color: var(--color);
+  width: fit-content;
 }
 
 .arrow_icon__Profile {

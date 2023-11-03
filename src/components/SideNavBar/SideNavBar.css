@@ -18,6 +18,7 @@
   color: var(--color);
   align-items: center;
   text-transform: capitalize;
+  width: fit-content;
 }
 
 .dash__SideNavBar {
