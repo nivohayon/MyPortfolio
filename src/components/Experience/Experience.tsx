@@ -5,15 +5,20 @@ import SkillTag from '../SkillTag/SkillTag';
 import './Experience.css';
 
 function Experience() {
+  const handleExperienceCardClick = (link: string) => {
+    window.open(link, '_blank');
+  };
+
   return (
     <article className="container__Experience">
       <h3 id="experience">{appData.titleExperience}</h3>
       {appData.experiences.map((item) => {
         return (
-          <a
+          <div
             key={item.id}
-            href={item.mainLink}
-            target="_blank"
+            onClick={() => {
+              handleExperienceCardClick(item.cardClickLink);
+            }}
             className="experience_container__Experience"
           >
             <span className="from_until__Experience">
@@ -46,7 +51,7 @@ function Experience() {
                   })}
               </div>
             </div>
-          </a>
+          </div>
         );
       })}
     </article>

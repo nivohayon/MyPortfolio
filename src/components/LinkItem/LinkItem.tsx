@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import LinkChainSVG from '../../assets/link_chain.svg?react';
 import './LinkItem.css';
 
@@ -14,9 +15,9 @@ const LinkItem = ({ title, url }: LinkItemProps) => {
   return (
     <div onClick={handleOpenLink} className="link_item_container__LinkItem">
       <LinkChainSVG className="link_chain__LinkItem" />
-      <a className="link_item__LinkItem" href={url} target="_blank">
+      <Link className="link_item__LinkItem" to={url} target="_blank">
         {title}
-      </a>
+      </Link>
     </div>
   );
 };

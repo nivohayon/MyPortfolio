@@ -31,7 +31,7 @@ export const appData = {
       title: 'Fullstack developer',
       description:
         'Developed and styled interactive web apps for Apple Music, including the UI of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.',
-      mainLink: 'https://www.github.com/example_main_link',
+      cardClickLink: 'https://www.github.com/example_main_link',
       links: [
         {
           title: 'Github',
@@ -55,7 +55,7 @@ export const appData = {
       title: 'Fullstack developer',
       description:
         'Developed and styled interactive web apps for Apple Music, including the UI of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.',
-      mainLink: 'https://www.github.com/example_main_link',
+      cardClickLink: 'https://www.github.com/example_main_link',
       links: [
         {
           title: 'Github',
@@ -79,7 +79,7 @@ export const appData = {
       title: 'Fullstack developer',
       description:
         'Developed and styled interactive web apps for Apple Music, including the UI of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.',
-      mainLink: 'https://www.github.com/example_main_link',
+      cardClickLink: 'https://www.github.com/example_main_link',
       links: [
         {
           title: 'Github',
@@ -102,23 +102,29 @@ export const appData = {
   titleProjects: 'Projects',
   projects: [
     {
+      id: 1,
       previewUrl: '',
       title: 'My Store',
       description: 'A website for posting second hand products for sale.',
       skills: ['React', 'SCSS', '.NET Core', 'MSSQL'],
+      cardClickLink: '',
     },
     {
+      id: 2,
       previewUrl: '',
       title: 'Pantry Recipes',
       description: 'Find recipes based on what you have in the kitchen.',
       skills: ['React Native', '.NET Core', 'MSSQL'],
+      cardClickLink: '',
     },
     {
+      id: 3,
       previewUrl: '',
       title: 'Pantry Recipes',
       description:
         'Yea i know i did the same app twice... I did it because i had 2 final projects i needed to do i 2 different majors and i liked my idea very much so i decided to stick with it.',
       skills: ['Java For Android', 'Firebase'],
+      cardClickLink: '',
     },
   ],
 
