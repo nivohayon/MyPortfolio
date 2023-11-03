@@ -29,7 +29,11 @@ function About() {
           {appData.about_diploma_link_text}
         </a>
       </p>
-      <p className="text__About">{appData.text2About}</p>
+      <p className="text__About">
+        {appData.text2_1About}
+        &nbsp;
+        {appData.text2_2About}
+      </p>
       <p className="text__About">{appData.text3About}</p>
     </article>
   );

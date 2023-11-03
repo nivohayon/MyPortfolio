@@ -21,10 +21,12 @@ export const appData = {
   about_diploma_link_text: 'Diploma.',
   about_diploma_link:
     'https://drive.google.com/file/d/1CKVcYDICAYFC7d5oJwUTsZPLLkGpb6DY/view?usp=sharing',
-  text2About:
-    'My main focus these days is learning electronics and embedded. In my free time i am working',
+  text2_1About:
+    'My main focus these days is learning embedded and electronics.',
+  text2_2About:
+    ' In my free time I am learning new things, working on projects.',
   text3About:
-    'When I’m not at the computer, I’m usually rock climbing, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds Korok seeds.',
+    "When I'm not at the computer, I'm usually hanging out with my girlfriend, working out at the gym, watching tv, or meeting with friends.",
 
   // Links
   github_link: 'https://github.com/nivohayon',
