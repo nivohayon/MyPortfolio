@@ -10,6 +10,17 @@
   color: var(--grey);
 }
 
+.link__About {
+  text-decoration: none;
+  color: var(--color);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.link__About:hover {
+  color: var(--green);
+}
+
 @media all and (min-width: 1024px) {
   .container__About {
     margin-top: 0;

@@ -9,6 +9,8 @@ type LinkWithArrowProps = {
   reversed?: boolean;
   className?: string;
   arrowColor?: string;
+  reloadDocument?: boolean;
+  target?: React.HTMLAttributeAnchorTarget;
 };
 
 function LinkWithArrow({
@@ -17,11 +19,14 @@ function LinkWithArrow({
   reversed,
   className,
   arrowColor,
+  reloadDocument,
+  target,
 }: LinkWithArrowProps) {
   return (
     <Link
       to={to}
-      reloadDocument
+      target={target}
+      reloadDocument={reloadDocument}
       className={combineClasses(
         'view_resume_container__LinkWithArrow',
         className ?? '',

@@ -6,10 +6,21 @@ export const appData = {
   workPlaceLink: 'https://msapps.mobi/',
   descriptionProfile: 'I Build applications for web and mobile from scratch ',
   viewFullResumeText: 'View Full Resumé',
+  viewFullResumeLink:
+    'https://drive.google.com/file/d/1CzqmKvHHFfM5zRVztqrG65kTg5QlxlRM/view?usp=sharing',
 
   // About
-  text1About:
-    "Ever since I can remember I was always curious about how things work behind the scenes. My passion for programming started from watching YouTubers who did amazing things using programming so I decided its time to become a programmer. Fast-forward to 2019, I started learning Software Engineering in Ruppin technological college. In 2021 I've graduated with an average grade of 90 and got my diploma.",
+  text1_1About:
+    'Ever since I can remember I was always curious about how things work behind the scenes.',
+  text1_2About: 'My passion towards programming started after watching some',
+  about_youtube_link_text: 'YouTubers',
+  about_youtube_link: 'https://www.youtube.com/@MichaelReeves',
+  text1_3About: 'that used programming to build amazing things.',
+  text1_4About:
+    "Fast-forward to 2019, I started learning Software Engineering in Ruppin technological college. In 2021 I've graduated with an average grade of 90 and got my",
+  about_diploma_link_text: 'Diploma.',
+  about_diploma_link:
+    'https://drive.google.com/file/d/1CKVcYDICAYFC7d5oJwUTsZPLLkGpb6DY/view?usp=sharing',
   text2About:
     'My main focus these days is learning electronics and embedded. In my free time i am working',
   text3About:
