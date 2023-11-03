@@ -1,3 +1,8 @@
+.background_provider {
+  position: fixed;
+  inset: 0;
+}
+
 @media all and (min-width: 1024px) {
   /* START - Mouse cursor flashlight effect - desktop only */
   .background_provider:after {
