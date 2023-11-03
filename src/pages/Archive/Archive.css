@@ -129,7 +129,6 @@ td:nth-child(5) {
   }
 
   .title_text_container__Archive {
-    cursor: default;
     pointer-events: none;
   }
 
