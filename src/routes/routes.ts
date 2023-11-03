@@ -4,4 +4,5 @@ export const routes = {
   About: 'about',
   Experience: 'experience',
   Projects: 'projects',
+  Archive: 'archive',
 };

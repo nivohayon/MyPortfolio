@@ -1,7 +1,6 @@
 .view_resume_container__LinkWithArrow {
   display: flex;
   align-items: center;
-  margin-top: 25px;
   cursor: pointer;
   text-decoration: none;
   color: var(--color);

@@ -1,6 +1,7 @@
 import { appData } from '../../data/appData';
 import { routes } from '../../routes/routes';
 import Card from '../Card/Card';
+import LinkWithArrow from '../LinkWithArrow/LinkWithArrow';
 import './Projects.css';
 
 function Projects() {
@@ -12,6 +13,10 @@ function Projects() {
       {projectsToRender.map((project) => {
         return <Card key={project.id} type="projects" data={project} />;
       })}
+      <LinkWithArrow
+        to={routes.Archive}
+        label={appData.viewFullProjectsArchiveText}
+      />
     </div>
   );
 }

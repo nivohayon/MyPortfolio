@@ -102,6 +102,7 @@ export const appData = {
   // Projects
   titleProjects: 'Projects',
   installsCountText: 'Installs',
+  viewFullProjectsArchiveText: 'View Full Project Archive',
   projects: [
     {
       id: 1,
