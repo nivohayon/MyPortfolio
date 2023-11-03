@@ -32,7 +32,7 @@ export const appData = {
       title: 'Fullstack developer',
       description:
         'Developed and styled interactive web apps for Apple Music, including the UI of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.',
-      cardClickLink: 'https://www.github.com/example_main_link',
+      mainLink: 'https://www.github.com/example_main_link',
       links: [
         {
           title: 'Github',
@@ -56,7 +56,7 @@ export const appData = {
       title: 'Fullstack developer',
       description:
         'Developed and styled interactive web apps for Apple Music, including the UI of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.',
-      cardClickLink: 'https://www.github.com/example_main_link',
+      mainLink: 'https://www.github.com/example_main_link',
       links: [
         {
           title: 'Github',
@@ -80,7 +80,7 @@ export const appData = {
       title: 'Fullstack developer',
       description:
         'Developed and styled interactive web apps for Apple Music, including the UI of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.',
-      cardClickLink: 'https://www.github.com/example_main_link',
+      mainLink: 'https://www.github.com/example_main_link',
       links: [
         {
           title: 'Github',
@@ -110,7 +110,9 @@ export const appData = {
       title: 'My Store',
       description: 'A website for posting second hand products for sale.',
       skills: ['React', 'SCSS', '.NET Core', 'MSSQL'],
-      cardClickLink: '',
+      mainLink: 'mainLink',
+      year: 2021,
+      madeAt: 'Ruppin',
     },
     {
       id: 2,
@@ -118,8 +120,10 @@ export const appData = {
       title: 'Pantry Recipes',
       description: 'Find recipes based on what you have in the kitchen.',
       skills: ['React Native', '.NET Core', 'MSSQL'],
-      cardClickLink: '',
+      mainLink: 'mainLink',
       installCount: '1200+',
+      year: 2021,
+      madeAt: 'Ruppin',
     },
     {
       id: 3,
@@ -128,8 +132,10 @@ export const appData = {
       description:
         'Yea i know i did the same app twice... I did it because i had 2 final projects i needed to do i 2 different majors and i liked my idea very much so i decided to stick with it.',
       skills: ['Java For Android', 'Firebase'],
-      cardClickLink: '',
+      mainLink: 'mainLink',
       installCount: '5+',
+      year: 2020,
+      madeAt: 'Ruppin',
     },
     {
       id: 4,
@@ -137,20 +143,25 @@ export const appData = {
       title: 'Placeholder',
       description: 'Description placeholder',
       skills: ['Skill A', 'Skill B'],
-      cardClickLink: '',
+      mainLink: 'mainLink',
+      year: 2022,
+      madeAt: 'MSAPPS',
     },
     {
-      id: 4,
+      id: 5,
       previewUrl: '',
       title: 'Project Placeholder',
       description: 'Project Description placeholder',
       skills: ['Skill C', 'Skill D'],
-      cardClickLink: '',
+      mainLink: 'mainLink',
+      year: 2022,
+      madeAt: 'MSAPPS',
     },
   ],
 
   // Archive
   backToHomeLinkText: 'Back Home',
+  archiveTitle: 'All Projects',
 
   // Footer
   inspiredByText: "Brittany Chiang's Website",

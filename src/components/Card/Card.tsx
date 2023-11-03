@@ -18,8 +18,8 @@ function Card({ type, data }: CardProps) {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    if (data.cardClickLink) {
-      window.open(data.cardClickLink, '_blank');
+    if (data.mainLink) {
+      window.open(data.mainLink, '_blank');
     } else {
       navigate(routes.ComingSoon);
     }

@@ -4,7 +4,7 @@ export interface IExperience {
   until: string;
   title: string;
   description: string;
-  cardClickLink: string;
+  mainLink: string;
   links: {
     title: string;
     url: string;
@@ -18,6 +18,6 @@ export interface IProject {
   title: string;
   description: string;
   skills: string[];
-  cardClickLink: string;
+  mainLink: string;
   installCount: string;
 }

@@ -8,9 +8,16 @@ type LinkWithArrowProps = {
   label: string;
   reversed?: boolean;
   className?: string;
+  arrowColor?: string;
 };
 
-function LinkWithArrow({ to, label, reversed, className }: LinkWithArrowProps) {
+function LinkWithArrow({
+  to,
+  label,
+  reversed,
+  className,
+  arrowColor,
+}: LinkWithArrowProps) {
   return (
     <Link
       to={to}
@@ -22,6 +29,7 @@ function LinkWithArrow({ to, label, reversed, className }: LinkWithArrowProps) {
     >
       <span className="view_resume_text__LinkWithArrow">{label}</span>
       <ArrowIconSVG
+        fill={arrowColor ?? 'currentColor'}
         className={
           reversed
             ? 'reversed_arrow_icon___LinkWithArrow'

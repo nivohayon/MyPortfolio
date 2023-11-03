@@ -6,6 +6,33 @@
   height: 100%;
 }
 
+.title__Archive {
+  font-size: 48px;
+  margin-top: 5px;
+}
+
+.back_home_text__Archive {
+  color: var(--green);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  border-bottom: 1px solid #dddddd;
+}
+tr:last-child {
+  border-bottom: unset;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 16px;
+}
+
 @media (min-width: 768px) {
   .container__Archive {
     padding: 48px;
