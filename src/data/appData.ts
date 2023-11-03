@@ -129,6 +129,22 @@ export const appData = {
       cardClickLink: '',
       installCount: '5+',
     },
+    {
+      id: 4,
+      previewUrl: '',
+      title: 'Placeholder',
+      description: 'Description placeholder',
+      skills: ['Skill A', 'Skill B'],
+      cardClickLink: '',
+    },
+    {
+      id: 4,
+      previewUrl: '',
+      title: 'Project Placeholder',
+      description: 'Project Description placeholder',
+      skills: ['Skill C', 'Skill D'],
+      cardClickLink: '',
+    },
   ],
 
   // Footer
