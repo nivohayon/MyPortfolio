@@ -1,11 +1,13 @@
 import LinkItem from '../LinkItem/LinkItem';
 import SkillTag from '../SkillTag/SkillTag';
 import ArrowIconSVG from '../../assets/arrow_icon.svg?react';
+import DownloadIconSVG from '../../assets/download_icon.svg?react';
 import { IExperience, IProject } from '../../types';
 import { useNavigate } from 'react-router-dom';
 import { routes } from '../../routes/routes';
 import ProjectPlaceholderImg from '../../assets/project_placeholder.jpg';
 import './Card.css';
+import { appData } from '../../data/appData';
 
 type CardProps = {
   type: 'experiences' | 'projects';
@@ -54,6 +56,16 @@ function Card({ type, data }: CardProps) {
                 );
               })
             : null}
+        </div>
+        <div className="installs_count_container__Card">
+          {type === 'projects' && data.installCount && (
+            <>
+              <DownloadIconSVG className="download_icon__Card" />
+              <span className="install_count_text__Card">
+                {data.installCount} {appData.installsCountText}
+              </span>
+            </>
+          )}
         </div>
         <div className="skills_container__Card">
           {data?.skills?.length

@@ -19,4 +19,5 @@ export interface IProject {
   description: string;
   skills: string[];
   cardClickLink: string;
+  installCount: string;
 }

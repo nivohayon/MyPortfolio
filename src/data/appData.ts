@@ -100,6 +100,7 @@ export const appData = {
 
   // Projects
   titleProjects: 'Projects',
+  installsCountText: 'Installs',
   projects: [
     {
       id: 1,
@@ -116,6 +117,7 @@ export const appData = {
       description: 'Find recipes based on what you have in the kitchen.',
       skills: ['React Native', '.NET Core', 'MSSQL'],
       cardClickLink: '',
+      installCount: '1200+',
     },
     {
       id: 3,
@@ -125,6 +127,7 @@ export const appData = {
         'Yea i know i did the same app twice... I did it because i had 2 final projects i needed to do i 2 different majors and i liked my idea very much so i decided to stick with it.',
       skills: ['Java For Android', 'Firebase'],
       cardClickLink: '',
+      installCount: '5+',
     },
   ],
 

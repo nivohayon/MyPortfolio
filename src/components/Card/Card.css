@@ -82,6 +82,23 @@
   gap: 20px;
 }
 
+.installs_count_container__Card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.download_icon__Card {
+  width: 16px;
+  height: 16px;
+}
+
+.install_count_text__Card {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 @media all and (min-width: 1024px) {
   .container__Card {
     flex-direction: row;
