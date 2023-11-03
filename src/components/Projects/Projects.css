@@ -1,4 +1,5 @@
 .container__Projects {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }

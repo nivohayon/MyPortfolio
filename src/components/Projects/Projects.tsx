@@ -1,6 +1,7 @@
 import { appData } from '../../data/appData';
 import { routes } from '../../routes/routes';
 import Card from '../Card/Card';
+import './Projects.css';
 
 function Projects() {
   return (
