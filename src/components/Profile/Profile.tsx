@@ -35,7 +35,7 @@ function Profile({ containerRef }: ProfileProps) {
       </h3>
       <h4 className="description__Profile">{appData.descriptionProfile}</h4>
       <LinkWithArrow
-        style={{ marginTop: '25px' }}
+        className="link_with_arrow__Profile"
         to="/resume.pdf"
         label={appData.viewFullResumeText}
       />
