@@ -10,6 +10,7 @@ export const appData = {
     'https://drive.google.com/file/d/1CzqmKvHHFfM5zRVztqrG65kTg5QlxlRM/view?usp=sharing',
 
   // About
+  about_title: 'About',
   text1_1About:
     'Ever since I can remember myself, I was always curious about how things work behind the scenes.',
   text1_2About: 'My passion for programming started after watching some',
@@ -178,19 +179,26 @@ export const appData = {
   archiveTitle: 'All Projects',
 
   // Footer
-  inspiredByText: "Brittany Chiang's Website",
+  inspiredByFooter: 'Inspired by ',
+  inspiredByText: "Brittany Chiang's Website ",
   inspiredByLink: 'https://brittanychiang.com/',
-  vscodeText: 'Visual Studio Code',
+  andCodedInFooter: 'and coded in ',
+  vscodeText: 'Visual Studio Code ',
   vscodeLink: 'https://code.visualstudio.com/',
-  reactText: 'React',
+  byYoursFooter: 'by yours truly. Built with ',
+  reactText: 'React ',
+  andFooter: 'and ',
   reactLink: 'https://react.dev/',
-  tsText: 'Typescript',
+  tsText: 'Typescript ',
   tsLink: 'https://www.typescriptlang.org/',
+  usingFooter: 'using ',
   viteText: 'Vite',
   viteLink: 'https://vitejs.dev/',
-  ghPagesText: 'GitHub Pages',
+  deployedWithFooter: ', deployed with ',
+  ghPagesText: 'GitHub Pages.',
   ghPagesLink: 'https://pages.github.com/',
-  interText: 'Inter',
+  fontUsedFooter: 'The font family used is ',
+  interText: 'Inter.',
   interLink: 'https://fonts.google.com/specimen/Inter',
 
   // Not Found

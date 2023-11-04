@@ -6,8 +6,8 @@ import { IExperience, IProject } from '../../types';
 import { useNavigate } from 'react-router-dom';
 import { routes } from '../../routes/routes';
 import ProjectPlaceholderImg from '../../assets/project_placeholder.jpg';
-import './Card.css';
 import { appData } from '../../data/appData';
+import './Card.css';
 
 type CardProps = {
   type: 'experiences' | 'projects';

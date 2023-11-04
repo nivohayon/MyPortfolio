@@ -5,7 +5,7 @@ import './About.css';
 function About() {
   return (
     <article className="container__About">
-      <h3 id={routes.About}>About</h3>
+      <h3 id={routes.About}>{appData.about_title}</h3>
       <p className="text__About">
         {appData.text1_1About} &nbsp;
         {appData.text1_2About}
