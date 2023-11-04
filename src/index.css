@@ -24,6 +24,15 @@
   --linkWithArrowUnderlineColor-dark: rgb(94, 234, 212);
   --fromUntilTextColor-dark: rgb(150, 166, 189);
   --navBarDashColor-dark: var(--primaryColor-dark);
+  --cardFilterColor-dark: #000;
+  --arrowIconAndTextCardColor-dark: rgba(226, 232, 240, 0.87);
+  --cardMainHoverColor-dark: var(--green-dark);
+  --linkItemChainColor-dark: rgb(203, 213, 225);
+  --linkItemChainHoverColor-dark: var(--green-dark);
+  --linkItemChainTextHoverColor-dark: var(--green-dark);
+  --linkItemChainTextWeightHover-dark: 300;
+  --skillTagBackgroundColor-dark: rgba(94, 234, 212, 0.1);
+  --skillTagTextColor-dark: var(--green-dark);
 
   /* Variables - Light Mode */
   --primaryColor-light: rgba(34, 34, 34, 0.87);
@@ -43,6 +52,15 @@
   --linkWithArrowUnderlineColor-light: rgb(36, 36, 36);
   --fromUntilTextColor-light: rgb(60, 60, 60);
   --navBarDashColor-light: var(--primaryColor-light);
+  --cardFilterColor-light: transparent;
+  --arrowIconAndTextCardColor-light: var(--primaryColor-light);
+  --cardMainHoverColor-light: var(--primaryColor-light);
+  --linkItemChainColor-light: var(--primaryColor-light);
+  --linkItemChainHoverColor-light: #000;
+  --linkItemChainTextHoverColor-light: #000;
+  --linkItemChainTextWeightHover-light: 700;
+  --skillTagBackgroundColor-light: rgba(94, 234, 212, 0.25);
+  --skillTagTextColor-light: rgb(0 114 96);
 }
 
 body[data-theme='dark'] {
@@ -63,6 +81,15 @@ body[data-theme='dark'] {
   --linkWithArrowUnderlineColor: var(--linkWithArrowUnderlineColor-dark);
   --fromUntilTextColor: var(--fromUntilTextColor-dark);
   --navBarDashColor: var(--navBarDashColor-dark);
+  --cardFilterColor: var(--cardFilterColor-dark);
+  --arrowIconAndTextCardColor: var(--arrowIconAndTextCardColor-dark);
+  --cardMainHoverColor: var(--cardMainHoverColor-dark);
+  --linkItemChainColor: var(--linkItemChainColor-dark);
+  --linkItemChainHoverColor: var(--linkItemChainHoverColor-dark);
+  --linkItemChainTextHoverColor: var(--linkItemChainTextHoverColor-dark);
+  --linkItemChainTextWeightHover: var(--linkItemChainTextWeightHover-dark);
+  --skillTagBackgroundColor: var(--skillTagBackgroundColor-dark);
+  --skillTagTextColor: var(--skillTagTextColor-dark);
 }
 
 body[data-theme='light'] {
@@ -83,6 +110,15 @@ body[data-theme='light'] {
   --linkWithArrowUnderlineColor: var(--linkWithArrowUnderlineColor-light);
   --fromUntilTextColor: var(--fromUntilTextColor-light);
   --navBarDashColor: var(--navBarDashColor-light);
+  --cardFilterColor: var(--cardFilterColor-light);
+  --arrowIconAndTextCardColor: var(--arrowIconAndTextCardColor-light);
+  --cardMainHoverColor: var(--cardMainHoverColor-light);
+  --linkItemChainColor: var(--linkItemChainColor-light);
+  --linkItemChainHoverColor: var(--linkItemChainHoverColor-light);
+  --linkItemChainTextHoverColor: var(--linkItemChainTextHoverColor-light);
+  --linkItemChainTextWeightHover: var(--linkItemChainTextWeightHover-light);
+  --skillTagBackgroundColor: var(--skillTagBackgroundColor-light);
+  --skillTagTextColor: var(--skillTagTextColor-light);
 }
 
 * {

@@ -6,12 +6,17 @@
   transition: all 300ms;
 }
 
+.link_chain__LinkItem {
+  fill: var(--linkItemChainColor);
+}
+
 .link_item_container__LinkItem:hover .link_chain__LinkItem {
-  fill: var(--green);
+  fill: var(--linkItemChainHoverColor);
 }
 
 .link_item_container__LinkItem:hover .link_item__LinkItem {
-  color: var(--green);
+  color: var(--linkItemChainTextHoverColor);
+  font-weight: var(--linkItemChainTextWeightHover);
 }
 
 .link_item__LinkItem {
