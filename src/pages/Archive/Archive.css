@@ -65,7 +65,7 @@ td:nth-child(5) {
 }
 
 .title_text_container__Archive:hover .title_text__Archive {
-  color: var(--green);
+  color: var(--linkItemChainTextHoverColor);
 }
 
 .title_text_arrow__Archive {
@@ -73,11 +73,12 @@ td:nth-child(5) {
   height: 16px;
   transform: rotateZ(-45deg);
   transition: all 300ms;
+  fill: var(--archiveArrowIconColor);
 }
 
 .title_text_container__Archive:hover .title_text_arrow__Archive {
   transform: translateY(-3px) translateX(3px) rotateZ(-45deg);
-  fill: var(--green);
+  fill: var(--linkItemChainTextHoverColor);
 }
 
 .madeAt_text__Archive {
@@ -98,13 +99,17 @@ td:nth-child(5) {
   width: fit-content;
 }
 
+.mainLink_arrow_icon__Archive {
+  fill: var(--archiveArrowIconColor);
+}
+
 .mainLink_container__Archive:hover .mainLink_arrow_icon__Archive {
   transform: translateY(-3px) translateX(3px) rotateZ(-45deg);
-  fill: var(--green);
+  fill: var(--linkItemChainTextHoverColor);
 }
 
 .mainLink_container__Archive:hover .mainLink_text__Archive {
-  color: var(--green);
+  color: var(--linkItemChainTextHoverColor);
 }
 
 .mainLink_text__Archive {
