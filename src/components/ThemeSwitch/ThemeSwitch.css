@@ -1,0 +1,14 @@
+.container__ThemeSwitch {
+}
+
+.sun_icon__ThemeSwitch {
+  width: 64px;
+  height: 64px;
+  fill: var(--primaryColor);
+}
+
+.moon_icon__ThemeSwitch {
+  width: 64px;
+  height: 64px;
+  fill: var(--primaryColor);
+}

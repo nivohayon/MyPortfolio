@@ -3,7 +3,7 @@
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  color: var(--color);
+  color: var(--primaryColor);
   width: fit-content;
 }
 

@@ -6,9 +6,11 @@ import About from '../../components/About/About';
 import Experience from '../../components/Experience/Experience';
 import Projects from '../../components/Projects/Projects';
 import Footer from '../../components/Footer/Footer';
+import useScrollToHashElement from '../../hooks/useScrollToHashElement';
 import './SplitScreen.css';
 
 function SplitScreen() {
+  useScrollToHashElement();
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (

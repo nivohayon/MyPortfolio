@@ -5,16 +5,27 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --color: rgba(226, 232, 240, 0.87);
+}
+
+.dark {
+  --primaryColor: rgba(226, 232, 240, 0.87);
+  --secondaryColor: rgba(34, 34, 34, 0.87);
   --green: rgb(94, 234, 212);
   --grey: rgb(136 147 162);
-  color: var(--color);
+}
+
+.light {
+  --primaryColor: rgba(34, 34, 34, 0.87);
+  --secondaryColor: rgba(226, 232, 240, 0.87);
+  --green: rgb(94, 234, 212);
+  --grey: rgb(136 147 162);
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: var(--primaryColor);
 }
 
 html {

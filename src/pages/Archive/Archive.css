@@ -61,7 +61,7 @@ td:nth-child(5) {
 
 .title_text__Archive {
   font-weight: 800;
-  color: var(--color);
+  color: var(--primaryColor);
 }
 
 .title_text_container__Archive:hover .title_text__Archive {

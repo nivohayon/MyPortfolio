@@ -16,5 +16,5 @@
 
 .link_item__LinkItem {
   text-decoration: none;
-  color: var(--color);
+  color: var(--primaryColor);
 }

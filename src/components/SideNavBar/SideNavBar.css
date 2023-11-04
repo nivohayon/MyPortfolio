@@ -15,7 +15,7 @@
   display: flex;
   gap: 5px;
   text-decoration: none;
-  color: var(--color);
+  color: var(--primaryColor);
   align-items: center;
   text-transform: capitalize;
   width: fit-content;

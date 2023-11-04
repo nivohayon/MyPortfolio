@@ -62,7 +62,7 @@
 .title__Card {
   font-size: 18px;
   font-weight: 500;
-  color: var(--color);
+  color: var(--primaryColor);
 }
 
 .container__Card:hover .title__Card {

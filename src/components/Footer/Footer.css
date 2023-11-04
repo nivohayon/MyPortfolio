@@ -10,7 +10,7 @@
 
 .inline_link__Footer {
   text-decoration: none;
-  color: var(--color);
+  color: var(--primaryColor);
   font-weight: 500;
   transition: color 300ms;
 }

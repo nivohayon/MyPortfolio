@@ -21,7 +21,7 @@
 
 .work_place_name__Profile {
   text-decoration: none;
-  color: var(--color);
+  color: var(--primaryColor);
 }
 
 .work_place_name__Profile:hover {
