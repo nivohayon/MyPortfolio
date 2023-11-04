@@ -2,8 +2,8 @@ import LinkWithArrow from '../../components/LinkWithArrow/LinkWithArrow';
 import { appData } from '../../data/appData';
 import { routes } from '../../routes/routes';
 import ArrowIconSVG from '../../assets/arrow_icon.svg?react';
-import './Archive.css';
 import SkillTag from '../../components/SkillTag/SkillTag';
+import './Archive.css';
 
 function Archive() {
   return (
@@ -19,11 +19,11 @@ function Archive() {
       <table>
         <tbody>
           <tr>
-            <th>Year</th>
-            <th>Project</th>
-            <th>Made at</th>
-            <th>Build with</th>
-            <th>Link</th>
+            <th>{appData.yearArchive}</th>
+            <th>{appData.projectArchive}</th>
+            <th>{appData.madeAtArchive}</th>
+            <th>{appData.builtWithArchive}</th>
+            <th>{appData.linkArchive}</th>
           </tr>
           {appData.projects.map((project) => {
             return (

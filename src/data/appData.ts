@@ -175,6 +175,11 @@ export const appData = {
   ],
 
   // Archive
+  yearArchive:"Year",
+  projectArchive:"Project",
+  madeAtArchive:"Made at",
+  builtWithArchive:"Built with",
+  linkArchive:"Link",
   backToHomeLinkText: 'Back Home',
   archiveTitle: 'All Projects',
 
