@@ -11,21 +11,21 @@
 .sun_icon__ThemeSwitch {
   width: 48px;
   height: 48px;
-  fill: #dcdcdc;
+  fill: var(--themeSwitchSunFill);
   position: absolute;
   left: 0;
   top: 0;
-  transition: all 700ms ease-out;
+  transition: top 1500ms;
 }
 
 .moon_icon__ThemeSwitch {
   width: 48px;
   height: 48px;
-  fill: #dcdcdc;
+  fill: var(--themeSwitchMoonFill);
   position: absolute;
   left: 0;
   top: 48px;
-  transition: all 700ms ease-out;
+  transition: top 1500ms;
 }
 
 .dark .moon_icon__ThemeSwitch {

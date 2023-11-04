@@ -5,6 +5,7 @@ import Store from '../../store';
 import { setTheme } from '../../store/actions/themeActions';
 import './ThemeSwitch.css';
 import { localStorageKeys } from '../../types';
+import { combineClasses } from '../../utils/combineClasses';
 
 function ThemeSwitch() {
   const {
@@ -23,7 +24,7 @@ function ThemeSwitch() {
   }, [theme]);
 
   return (
-    <div className="container__ThemeSwitch">
+    <div className={combineClasses('container__ThemeSwitch', theme)}>
       <SunIconSVG onClick={handleToggle} className="sun_icon__ThemeSwitch" />
       <MoonIconSVG onClick={handleToggle} className="moon_icon__ThemeSwitch" />
     </div>
