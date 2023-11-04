@@ -10,6 +10,7 @@
 .dark {
   --primaryColor: rgba(226, 232, 240, 0.87);
   --secondaryColor: rgba(34, 34, 34, 0.87);
+  --backgroundColor: rgb(15, 23, 42);
   --green: rgb(94, 234, 212);
   --grey: rgb(136 147 162);
 }
@@ -17,6 +18,7 @@
 .light {
   --primaryColor: rgba(34, 34, 34, 0.87);
   --secondaryColor: rgba(226, 232, 240, 0.87);
+  --backgroundColor: rgb(47, 78, 152);
   --green: rgb(94, 234, 212);
   --grey: rgb(136 147 162);
 }
@@ -28,8 +30,22 @@
   color: var(--primaryColor);
 }
 
-html {
-  background-color: rgb(15, 23, 42);
+body[data-theme='dark'] {
+  --primaryColor: rgba(226, 232, 240, 0.87);
+  --secondaryColor: rgba(34, 34, 34, 0.87);
+  --backgroundColor: rgb(15, 23, 42);
+  --green: rgb(94, 234, 212);
+  --grey: rgb(136 147 162);
+  background-color: var(--backgroundColor);
+}
+
+body[data-theme='light'] {
+  --primaryColor: rgba(34, 34, 34, 0.87);
+  --secondaryColor: rgba(226, 232, 240, 0.87);
+  --backgroundColor: rgb(47, 78, 152);
+  --green: rgb(94, 234, 212);
+  --grey: rgb(136 147 162);
+  background-color: var(--backgroundColor);
 }
 
 html,
