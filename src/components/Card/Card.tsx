@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { routes } from '../../routes/routes';
 import ProjectPlaceholderImg from '../../assets/project_placeholder.jpg';
 import { appData } from '../../data/appData';
+import { combineClasses } from '../../utils/combineClasses';
 import './Card.css';
 
 type CardProps = {
@@ -26,7 +27,13 @@ function Card({ type, data }: CardProps) {
   };
 
   return (
-    <div onClick={handleCardClick} className="container__Card">
+    <div
+      onClick={handleCardClick}
+      className={combineClasses(
+        'container__Card',
+        type === 'projects' ? 'projects_container__Card' : ''
+      )}
+    >
       {type === 'experiences' ? (
         <span className="from_until__Card">
           {data.from} - {data.until}

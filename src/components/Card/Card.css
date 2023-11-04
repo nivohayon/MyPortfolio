@@ -10,6 +10,10 @@
   text-decoration: none;
 }
 
+.projects_container__Card {
+  flex-direction: row;
+}
+
 .container__Card:hover {
   background-color: rgba(255, 255, 255, 0.05);
   filter: drop-shadow(2px 4px 6px #000);
