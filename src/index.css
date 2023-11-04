@@ -5,22 +5,40 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /* Variables - Dark Mode */
+  --primaryColor-dark: rgba(226, 232, 240, 0.87);
+  --secondaryColor-dark: rgba(34, 34, 34, 0.87);
+  --backgroundColor-dark: rgb(15, 23, 42);
+  --green-dark: rgb(94, 234, 212);
+  --grey-dark: rgb(136 147 162);
+  --flashlightColor-dark: rgba(29, 78, 216, 0.7);
+
+  /* Variables - Light Mode */
+  --primaryColor-light: rgba(34, 34, 34, 0.87);
+  --secondaryColor-light: rgba(226, 232, 240, 0.87);
+  --backgroundColor-light: rgb(47, 78, 152);
+  --green-light: rgb(94, 234, 212);
+  --grey-light: rgb(136 147 162);
+  --flashlightColor-light: rgba(255, 0, 0, 0.7);
 }
 
-.dark {
-  --primaryColor: rgba(226, 232, 240, 0.87);
-  --secondaryColor: rgba(34, 34, 34, 0.87);
-  --backgroundColor: rgb(15, 23, 42);
-  --green: rgb(94, 234, 212);
-  --grey: rgb(136 147 162);
+body[data-theme='dark'] {
+  --primaryColor: var(--primaryColor-dark);
+  --secondaryColor: var(--secondaryColor-dark);
+  --backgroundColor: var(--backgroundColor-dark);
+  --green: var(--green-dark);
+  --grey: var(--grey-dark);
+  --flashlightColor: var(--flashlightColor-dark);
 }
 
-.light {
-  --primaryColor: rgba(34, 34, 34, 0.87);
-  --secondaryColor: rgba(226, 232, 240, 0.87);
-  --backgroundColor: rgb(47, 78, 152);
-  --green: rgb(94, 234, 212);
-  --grey: rgb(136 147 162);
+body[data-theme='light'] {
+  --primaryColor: var(--primaryColor-light);
+  --secondaryColor: var(--secondaryColor-light);
+  --backgroundColor: var(--backgroundColor-light);
+  --green: var(--green-light);
+  --grey: var(--grey-light);
+  --flashlightColor: var(--flashlightColor-light);
 }
 
 * {
@@ -30,34 +48,18 @@
   color: var(--primaryColor);
 }
 
-body[data-theme='dark'] {
-  --primaryColor: rgba(226, 232, 240, 0.87);
-  --secondaryColor: rgba(34, 34, 34, 0.87);
-  --backgroundColor: rgb(15, 23, 42);
-  --green: rgb(94, 234, 212);
-  --grey: rgb(136 147 162);
-  background-color: var(--backgroundColor);
-}
-
-body[data-theme='light'] {
-  --primaryColor: rgba(34, 34, 34, 0.87);
-  --secondaryColor: rgba(226, 232, 240, 0.87);
-  --backgroundColor: rgb(47, 78, 152);
-  --green: rgb(94, 234, 212);
-  --grey: rgb(136 147 162);
-  background-color: var(--backgroundColor);
-}
-
-html,
-body {
-  max-width: 100vw;
-  scroll-behavior: smooth;
-}
-
 html,
 body,
 #root {
   height: 100%;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+  background-color: var(--backgroundColor);
+}
+
+.app_main {
+  position: relative;
+  z-index: 1;
 }
 
 .noSelect {
@@ -67,4 +69,26 @@ body,
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+@media all and (min-width: 1024px) {
+  /* START - Mouse cursor flashlight effect - desktop only */
+  body:after {
+    content: '';
+    position: fixed;
+    top: calc(var(--y, 0) * 1px - 30vw);
+    left: calc(var(--x, 0) * 1px - 30vw);
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(var(--flashlightColor), transparent 70%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  body:hover::after {
+    opacity: 0.2;
+    z-index: 0;
+  }
+  /* END - Mouse cursor flashlight effect - desktop only*/
 }

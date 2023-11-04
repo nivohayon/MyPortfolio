@@ -1,35 +1,29 @@
 import React, { useCallback, useEffect } from 'react';
 
-function useMouseFlashlight(containerRef: React.RefObject<HTMLDivElement>) {
+const container = document.body;
+
+function useMouseFlashlight() {
   const mouseMoveEvent = useCallback(
     (e: React.MouseEvent<HTMLDivElement, MouseEvent> | MouseEvent) => {
-      if (containerRef.current && window.innerWidth >= 1024) {
-        const pos = containerRef?.current?.getBoundingClientRect();
-        containerRef.current.style.setProperty(
-          '--x',
-          (e.clientX - pos.x).toString()
-        );
-        containerRef.current.style.setProperty(
+      if (window.innerWidth >= 1024) {
+        const pos = document.body.getBoundingClientRect();
+        document.body.style.setProperty('--x', (e.clientX - pos.x).toString());
+        document.body.style.setProperty(
           '--y',
-          (e.clientY - pos.y).toString()
+          (e.clientY - pos.y - window.scrollY).toString()
         );
       }
     },
-    [containerRef]
+    []
   );
 
   useEffect(() => {
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener('mousemove', mouseMoveEvent);
-    }
+    container.addEventListener('mousemove', mouseMoveEvent);
 
     return () => {
-      if (container) {
-        container.removeEventListener('mousemove', mouseMoveEvent);
-      }
+      container.removeEventListener('mousemove', mouseMoveEvent);
     };
-  }, [containerRef, mouseMoveEvent]);
+  }, [mouseMoveEvent]);
 }
 
 export default useMouseFlashlight;
