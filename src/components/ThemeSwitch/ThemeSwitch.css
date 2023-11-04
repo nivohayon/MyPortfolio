@@ -1,7 +1,7 @@
 .container__ThemeSwitch {
   position: fixed;
   top: 15px;
-  left: 15px;
+  right: 15px;
   width: 48px;
   height: 48px;
   overflow: hidden;
@@ -13,7 +13,7 @@
   height: 48px;
   fill: var(--themeSwitchSunFill);
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   transition: top 1500ms;
 }
@@ -23,7 +23,7 @@
   height: 48px;
   fill: var(--themeSwitchMoonFill);
   position: absolute;
-  left: 0;
+  right: 0;
   top: 48px;
   transition: top 1500ms;
 }
