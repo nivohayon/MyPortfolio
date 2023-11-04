@@ -29,14 +29,8 @@ body {
 
 html,
 body,
-#root,
-.app_main {
+#root {
   height: 100%;
-}
-
-.app_main {
-  position: relative;
-  z-index: 1;
 }
 
 .noSelect {
