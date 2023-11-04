@@ -1,14 +1,45 @@
 .container__ThemeSwitch {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .sun_icon__ThemeSwitch {
-  width: 64px;
-  height: 64px;
-  fill: var(--primaryColor);
+  width: 48px;
+  height: 48px;
+  fill: #dcdcdc;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 700ms ease-out;
 }
 
 .moon_icon__ThemeSwitch {
-  width: 64px;
-  height: 64px;
-  fill: var(--primaryColor);
+  width: 48px;
+  height: 48px;
+  fill: #dcdcdc;
+  position: absolute;
+  left: 0;
+  top: 48px;
+  transition: all 700ms ease-out;
+}
+
+.dark .moon_icon__ThemeSwitch {
+  top: 0;
+}
+
+.dark .sun_icon__ThemeSwitch {
+  top: 96px;
+}
+
+.light .sun_icon__ThemeSwitch {
+  top: 0;
+}
+
+.light .moon_icon__ThemeSwitch {
+  top: 96px;
 }
