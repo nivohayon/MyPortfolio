@@ -21,6 +21,8 @@
 .view_resume_container__LinkWithArrow:hover .view_resume_text__LinkWithArrow {
   text-decoration: underline var(--linkWithArrowUnderlineColor);
   text-underline-offset: 5px;
+  color: var(--linkItemChainTextHoverColor);
+  font-weight: 500;
 }
 
 .reversed_link__LinkWithArrow {
