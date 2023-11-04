@@ -16,7 +16,7 @@
 }
 
 .inline_link__Footer:hover {
-  color: var(--green);
+  color: var(--footerTextHoverColor);
 }
 
 @media (min-width: 768px) {

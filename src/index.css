@@ -34,6 +34,7 @@
   --linkItemChainTextWeightHover-dark: 300;
   --skillTagBackgroundColor-dark: rgba(94, 234, 212, 0.1);
   --skillTagTextColor-dark: var(--green-dark);
+  --footerTextHoverColor-dark: var(--green-dark);
 
   /* Variables - Light Mode */
   --primaryColor-light: rgba(34, 34, 34, 0.87);
@@ -52,7 +53,7 @@
   --textShadowProfileDescColor-light: rgba(170, 170, 170, 0.5);
   --linkWithArrowUnderlineColor-light: rgb(36, 36, 36);
   --fromUntilTextColor-light: rgb(60, 60, 60);
-  --navBarDashColor-light: var(--primaryColor-light);
+  --navBarDashColor-light: rgb(100, 116, 139);
   --navBarSelectedDashColor-light: var(--primaryColor-light);
   --cardFilterColor-light: transparent;
   --arrowIconAndTextCardColor-light: var(--primaryColor-light);
@@ -63,6 +64,7 @@
   --linkItemChainTextWeightHover-light: 700;
   --skillTagBackgroundColor-light: rgba(94, 234, 212, 0.25);
   --skillTagTextColor-light: rgb(0 114 96);
+  --footerTextHoverColor-light: var(--primaryColor-light);
 }
 
 body[data-theme='dark'] {
@@ -93,6 +95,7 @@ body[data-theme='dark'] {
   --linkItemChainTextWeightHover: var(--linkItemChainTextWeightHover-dark);
   --skillTagBackgroundColor: var(--skillTagBackgroundColor-dark);
   --skillTagTextColor: var(--skillTagTextColor-dark);
+  --footerTextHoverColor: var(--footerTextHoverColor-dark);
 }
 
 body[data-theme='light'] {
@@ -123,6 +126,7 @@ body[data-theme='light'] {
   --linkItemChainTextWeightHover: var(--linkItemChainTextWeightHover-light);
   --skillTagBackgroundColor: var(--skillTagBackgroundColor-light);
   --skillTagTextColor: var(--skillTagTextColor-light);
+  --footerTextHoverColor: var(--footerTextHoverColor-light);
 }
 
 * {
