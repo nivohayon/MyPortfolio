@@ -23,7 +23,8 @@
   --textShadowProfileDescColor-dark: rgba(0, 0, 0, 0.5);
   --linkWithArrowUnderlineColor-dark: rgb(94, 234, 212);
   --fromUntilTextColor-dark: rgb(150, 166, 189);
-  --navBarDashColor-dark: var(--primaryColor-dark);
+  --navBarDashColor-dark: rgb(100, 116, 139);
+  --navBarSelectedDashColor-dark: var(--primaryColor-dark);
   --cardFilterColor-dark: #000;
   --arrowIconAndTextCardColor-dark: rgba(226, 232, 240, 0.87);
   --cardMainHoverColor-dark: var(--green-dark);
@@ -52,6 +53,7 @@
   --linkWithArrowUnderlineColor-light: rgb(36, 36, 36);
   --fromUntilTextColor-light: rgb(60, 60, 60);
   --navBarDashColor-light: var(--primaryColor-light);
+  --navBarSelectedDashColor-light: var(--primaryColor-light);
   --cardFilterColor-light: transparent;
   --arrowIconAndTextCardColor-light: var(--primaryColor-light);
   --cardMainHoverColor-light: var(--primaryColor-light);
@@ -81,6 +83,7 @@ body[data-theme='dark'] {
   --linkWithArrowUnderlineColor: var(--linkWithArrowUnderlineColor-dark);
   --fromUntilTextColor: var(--fromUntilTextColor-dark);
   --navBarDashColor: var(--navBarDashColor-dark);
+  --navBarSelectedDashColor: var(--navBarSelectedDashColor-dark);
   --cardFilterColor: var(--cardFilterColor-dark);
   --arrowIconAndTextCardColor: var(--arrowIconAndTextCardColor-dark);
   --cardMainHoverColor: var(--cardMainHoverColor-dark);
@@ -110,6 +113,7 @@ body[data-theme='light'] {
   --linkWithArrowUnderlineColor: var(--linkWithArrowUnderlineColor-light);
   --fromUntilTextColor: var(--fromUntilTextColor-light);
   --navBarDashColor: var(--navBarDashColor-light);
+  --navBarSelectedDashColor: var(--navBarSelectedDashColor-light);
   --cardFilterColor: var(--cardFilterColor-light);
   --arrowIconAndTextCardColor: var(--arrowIconAndTextCardColor-light);
   --cardMainHoverColor: var(--cardMainHoverColor-light);
