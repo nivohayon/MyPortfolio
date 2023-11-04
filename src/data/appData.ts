@@ -11,22 +11,23 @@ export const appData = {
 
   // About
   text1_1About:
-    'Ever since I can remember I was always curious about how things work behind the scenes.',
-  text1_2About: 'My passion towards programming started after watching some',
+    'Ever since I can remember myself, I was always curious about how things work behind the scenes.',
+  text1_2About: 'My passion for programming started after watching some',
   about_youtube_link_text: 'YouTubers',
   about_youtube_link: 'https://www.youtube.com/@MichaelReeves',
-  text1_3About: 'that used programming to build amazing things.',
+  text1_3About: 'who used programming to build amazing things.',
   text1_4About:
-    "Fast-forward to 2019, I started learning Software Engineering in Ruppin technological college. In 2021 I've graduated with an average grade of 90 and got my",
+    'Fast-forward to 2019, I started learning Software Engineering at',
+  about_ruppin_link_text: 'Ruppin Technological College.',
+  about_ruppin_link: 'https://mtr.ruppin.tech/',
+  text1_5About: 'In 2021 I graduated with an average grade of 90 and got my',
   about_diploma_link_text: 'Diploma.',
   about_diploma_link:
     'https://drive.google.com/file/d/1CKVcYDICAYFC7d5oJwUTsZPLLkGpb6DY/view?usp=sharing',
   text2_1About:
-    'My main focus these days is learning embedded and electronics.',
-  text2_2About:
-    ' In my free time I am learning new things, working on projects.',
+    'My main focus these days is learning embedded and electronics. In my free time, I am learning new technologies, and working on new projects.',
   text3About:
-    "When I'm not at the computer, I'm usually hanging out with my girlfriend, working out at the gym, watching tv, or meeting with friends.",
+    "When I'm not at the computer, I'm usually hanging out with my girlfriend, working out at the gym, watching TV, or meeting with friends.",
 
   // Links
   github_link: 'https://github.com/nivohayon',

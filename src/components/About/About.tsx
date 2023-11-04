@@ -19,7 +19,16 @@ function About() {
         </a>
         &nbsp;
         {appData.text1_3About} <br />
-        {appData.text1_4About}
+        {appData.text1_4About} &nbsp;
+        <a
+          className="link__About"
+          href={appData.about_ruppin_link}
+          target="_blank"
+        >
+          {appData.about_ruppin_link_text}
+        </a>
+        &nbsp;
+        {appData.text1_5About}
         &nbsp;
         <a
           className="link__About"
@@ -29,11 +38,7 @@ function About() {
           {appData.about_diploma_link_text}
         </a>
       </p>
-      <p className="text__About">
-        {appData.text2_1About}
-        &nbsp;
-        {appData.text2_2About}
-      </p>
+      <p className="text__About">{appData.text2_1About}</p>
       <p className="text__About">{appData.text3About}</p>
     </article>
   );
