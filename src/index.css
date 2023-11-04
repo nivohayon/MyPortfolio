@@ -20,6 +20,8 @@
   --profileDescColor-dark: rgb(188, 203, 224);
   --textShadowProfileTitleColor-dark: #000;
   --textShadowProfileDescColor-dark: rgba(0, 0, 0, 0.5);
+  --linkWithArrowUnderlineColor-dark: rgb(94, 234, 212);
+  --fromUntilTextColor-dark: rgb(150, 166, 189);
 
   /* Variables - Light Mode */
   --primaryColor-light: rgba(34, 34, 34, 0.87);
@@ -35,6 +37,8 @@
   --profileDescColor-light: rgb(188, 203, 224);
   --textShadowProfileTitleColor-light: #aaa;
   --textShadowProfileDescColor-light: rgba(170, 170, 170, 0.5);
+  --linkWithArrowUnderlineColor-light: rgb(94, 234, 212);
+  --fromUntilTextColor-light: rgb(150, 166, 189);
 }
 
 body[data-theme='dark'] {
@@ -51,6 +55,8 @@ body[data-theme='dark'] {
   --profileDescColor: var(var(--profileDescColor-dark));
   --textShadowProfileTitleColor: var(--textShadowProfileTitleColor-dark);
   --textShadowProfileDescColor: var(--textShadowProfileDescColor-dark);
+  --linkWithArrowUnderlineColor: var(--linkWithArrowUnderlineColor-dark);
+  --fromUntilTextColor: var(--fromUntilTextColor-dark);
 }
 
 body[data-theme='light'] {
@@ -67,6 +73,8 @@ body[data-theme='light'] {
   --profileDescColor: var(var(--profileDescColor-light));
   --textShadowProfileTitleColor: var(--textShadowProfileTitleColor-light);
   --textShadowProfileDescColor: var(--textShadowProfileDescColor-light);
+  --linkWithArrowUnderlineColor: var(--linkWithArrowUnderlineColor-light);
+  --fromUntilTextColor: var(--fromUntilTextColor-light);
 }
 
 * {

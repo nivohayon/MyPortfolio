@@ -21,7 +21,7 @@
 }
 
 .from_until__Card {
-  color: rgb(150, 166, 189);
+  color: var(--fromUntilTextColor);
   font-size: 14px;
   font-weight: 600;
   white-space: nowrap;
