@@ -7,7 +7,7 @@
 .title__Profile {
   font-size: 48px;
   font-weight: 700;
-  text-shadow: 1px 2px 2px #000;
+  text-shadow: 1px 2px 2px var(--textShadowProfileTitleColor);
   cursor: pointer;
   width: fit-content;
   margin-bottom: 10px;
@@ -16,7 +16,7 @@
 .subtitle__Profile {
   font-size: 20px;
   font-weight: 500;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 1px 1px var(--textShadowProfileDescColor);
 }
 
 .work_place_name__Profile {
@@ -32,7 +32,7 @@
   font-size: 18px;
   font-weight: 400;
   margin-top: 16px;
-  color: rgb(188, 203, 224);
+  color: var(--profileDescColor);
   max-width: 300px;
 }
 

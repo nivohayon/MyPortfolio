@@ -11,22 +11,30 @@
   --secondaryColor-dark: rgba(34, 34, 34, 0.87);
   --backgroundColor-dark: rgb(15, 23, 42);
   --green-dark: rgb(94, 234, 212);
-  --grey-dark: rgb(136 147 162);
+  --aboutTextColor-dark: rgb(136 147 162);
+  --aboutLinkColor-dark: rgba(226, 232, 240, 0.87);
   --flashlightColor-dark: rgba(29, 78, 216, 0.7);
   --selectionBackgroundColor-dark: rgb(94, 234, 212);
   --selectionTextColor-dark: rgb(74, 76, 79);
   --themeSwitchMoonFill-dark: #dcdcdc;
+  --profileDescColor-dark: rgb(188, 203, 224);
+  --textShadowProfileTitleColor-dark: #000;
+  --textShadowProfileDescColor-dark: rgba(0, 0, 0, 0.5);
 
   /* Variables - Light Mode */
   --primaryColor-light: rgba(34, 34, 34, 0.87);
   --secondaryColor-light: rgba(226, 232, 240, 0.87);
-  --backgroundColor-light: #fff;
+  --backgroundColor-light: #eee;
   --green-light: rgb(94, 234, 212);
-  --grey-light: rgb(136 147 162);
+  --aboutTextColor-light: rgb(0, 0, 0);
+  --aboutLinkColor-light: rgb(0, 0, 0);
   --flashlightColor-light: rgba(99, 99, 99, 0.7);
   --selectionBackgroundColor-light: rgb(94, 234, 212);
   --selectionTextColor-light: rgb(136 147 162);
   --themeSwitchSunFill-light: #000;
+  --profileDescColor-light: rgb(188, 203, 224);
+  --textShadowProfileTitleColor-light: #aaa;
+  --textShadowProfileDescColor-light: rgba(170, 170, 170, 0.5);
 }
 
 body[data-theme='dark'] {
@@ -34,11 +42,15 @@ body[data-theme='dark'] {
   --secondaryColor: var(--secondaryColor-dark);
   --backgroundColor: var(--backgroundColor-dark);
   --green: var(--green-dark);
-  --grey: var(--grey-dark);
+  --aboutTextColor: var(--aboutTextColor-dark);
+  --aboutLinkColor: var(--aboutLinkColor-dark);
   --flashlightColor: var(--flashlightColor-dark);
   --selectionBackgroundColor: var(--selectionBackgroundColor-dark);
   --selectionTextColor: var(--selectionTextColor-dark);
   --themeSwitchMoonFill: var(--themeSwitchMoonFill-dark);
+  --profileDescColor: var(var(--profileDescColor-dark));
+  --textShadowProfileTitleColor: var(--textShadowProfileTitleColor-dark);
+  --textShadowProfileDescColor: var(--textShadowProfileDescColor-dark);
 }
 
 body[data-theme='light'] {
@@ -46,11 +58,15 @@ body[data-theme='light'] {
   --secondaryColor: var(--secondaryColor-light);
   --backgroundColor: var(--backgroundColor-light);
   --green: var(--green-light);
-  --grey: var(--grey-light);
+  --aboutTextColor: var(--aboutTextColor-light);
+  --aboutLinkColor: var(--aboutLinkColor-light);
   --flashlightColor: var(--flashlightColor-light);
   --selectionBackgroundColor: var(--selectionBackgroundColor-light);
   --selectionTextColor: var(--selectionTextColor-light);
   --themeSwitchSunFill: var(--themeSwitchSunFill-light);
+  --profileDescColor: var(var(--profileDescColor-light));
+  --textShadowProfileTitleColor: var(--textShadowProfileTitleColor-light);
+  --textShadowProfileDescColor: var(--textShadowProfileDescColor-light);
 }
 
 * {

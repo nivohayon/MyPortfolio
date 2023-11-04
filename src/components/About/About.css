@@ -7,13 +7,13 @@
 
 .text__About {
   line-height: 24px;
-  color: var(--grey);
+  color: var(--aboutTextColor);
 }
 
 .link__About {
   text-decoration: none;
-  color: var(--primaryColor);
-  font-weight: 400;
+  color: var(--aboutLinkColor);
+  font-weight: 500;
   cursor: pointer;
 }
 
