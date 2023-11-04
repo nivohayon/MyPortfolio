@@ -11,7 +11,7 @@ function Archive() {
       <LinkWithArrow
         to={routes.Home}
         label={appData.backToHomeLinkText}
-        arrowColor="var(--green)"
+        arrowColor="var(--linkItemChainTextHoverColor)"
         className="back_home_text__Archive"
         reversed
       />
