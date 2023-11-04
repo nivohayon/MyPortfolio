@@ -4,6 +4,7 @@ import { useContext, useEffect } from 'react';
 import Store from '../../store';
 import { setTheme } from '../../store/actions/themeActions';
 import './ThemeSwitch.css';
+import { localStorageKeys } from '../../types';
 
 function ThemeSwitch() {
   const {
@@ -14,6 +15,7 @@ function ThemeSwitch() {
   const handleToggle = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
     dispatchTheme(setTheme(newTheme));
+    localStorage.setItem(localStorageKeys.theme, newTheme);
   };
 
   useEffect(() => {

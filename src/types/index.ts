@@ -1,5 +1,9 @@
 export type Theme = 'light' | 'dark';
 
+export enum localStorageKeys {
+  theme = 'theme',
+}
+
 export interface IExperience {
   id: number;
   from: string;
