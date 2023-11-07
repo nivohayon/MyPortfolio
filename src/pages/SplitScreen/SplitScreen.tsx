@@ -7,6 +7,7 @@ import Experience from '../../components/Experience/Experience';
 import Projects from '../../components/Projects/Projects';
 import Footer from '../../components/Footer/Footer';
 import useScrollToHashElement from '../../hooks/useScrollToHashElement';
+import Education from '../../components/Education/Education';
 import './SplitScreen.css';
 
 function SplitScreen() {
@@ -23,6 +24,7 @@ function SplitScreen() {
       <div className="scrolly_side_container__SplitScreen">
         <About />
         <Experience />
+        <Education />
         <Projects />
         <Footer />
       </div>

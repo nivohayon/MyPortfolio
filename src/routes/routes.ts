@@ -3,6 +3,7 @@ export const routes = {
   ComingSoon: 'coming-soon',
   About: 'about',
   Experience: 'experience',
+  Education: 'education',
   Projects: 'projects',
   Archive: 'archive',
 };

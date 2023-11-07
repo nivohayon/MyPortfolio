@@ -11,11 +11,11 @@ import { combineClasses } from '../../utils/combineClasses';
 import './Card.css';
 
 type CardProps = {
-  type: 'experiences' | 'projects';
+  type?: 'default' | 'projects';
   data: Partial<IExperience & IProject>;
 };
 
-function Card({ type, data }: CardProps) {
+function Card({ type = 'default', data }: CardProps) {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
@@ -34,7 +34,7 @@ function Card({ type, data }: CardProps) {
         type === 'projects' ? 'projects_container__Card' : ''
       )}
     >
-      {type === 'experiences' ? (
+      {type === 'default' ? (
         <span className="from_until__Card">
           {data.from} - {data.until}
         </span>

@@ -8,7 +8,7 @@ function Experience() {
     <article className="container__Experience">
       <h3 id={routes.Experience}>{appData.titleExperience}</h3>
       {appData.experiences.map((item) => {
-        return <Card key={item.id} type="experiences" data={item} />;
+        return <Card key={item.id} data={item} />;
       })}
     </article>
   );

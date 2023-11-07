@@ -3,7 +3,12 @@ import { routes } from '../../routes/routes';
 import { combineClasses } from '../../utils/combineClasses';
 import './SideNavBar.css';
 
-const navItems = [routes.About, routes.Experience, routes.Projects];
+const navItems = [
+  routes.About,
+  routes.Experience,
+  routes.Education,
+  routes.Projects,
+];
 
 function SideNavBar() {
   const { hash } = useLocation();

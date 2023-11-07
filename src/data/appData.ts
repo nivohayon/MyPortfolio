@@ -20,7 +20,7 @@ export const appData = {
   text1_4About:
     'Fast-forward to 2019, I started learning Software Engineering at',
   about_ruppin_link_text: 'Ruppin Technological College.',
-  about_ruppin_link: 'https://mtr.ruppin.tech/',
+  about_ruppin_link: 'https://mtr.ruppin.tech/megamot/computers/',
   text1_5About: 'In 2021 I graduated with an average grade of 90 and got my',
   about_diploma_link_text: 'Diploma.',
   about_diploma_link:
@@ -72,6 +72,35 @@ export const appData = {
         'Typescript',
         'AWS',
         'Solidity',
+        'Git',
+      ],
+    },
+  ],
+
+  // Education
+  titleEducation: 'Education',
+  educations: [
+    {
+      id: 1,
+      from: '2019',
+      until: '2021',
+      title: 'Software Engineering at Ruppin',
+      description:
+        'I Majored in Software Engineering, Syllabus: Front end technologies: React, JavaScript, HTML, and CSS. Back end technologies: Express.js and C# Web API. Object-oriented programming, Data structures, Algorithms and Secured development, using C#. Mobile apps development using React Native and Java in Android Studio. Databases technologies: MSSQL, MongoDB, and Firebase Firestore. Other technologies: Python, Cyber, System analysis.',
+      mainLink: 'https://mtr.ruppin.tech/megamot/computers/',
+      skills: [
+        'React',
+        'React Native',
+        'Javascript',
+        'Express.js',
+        'C# Web API',
+        'MongoDB',
+        'MSSQL',
+        'Python',
+        'Java',
+        'Firebase',
+        'HTML',
+        'CSS',
       ],
     },
   ],
