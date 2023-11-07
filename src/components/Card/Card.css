@@ -36,6 +36,7 @@
 
 .preview_img__Card {
   width: 100%;
+  border-radius: 10px;
 }
 
 .data_container {
