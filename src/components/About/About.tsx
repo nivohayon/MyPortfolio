@@ -2,9 +2,13 @@ import { appData } from '../../data/appData';
 import { routes } from '../../routes/routes';
 import './About.css';
 
-function About() {
+type AboutProps = {
+  aboutRef: React.RefObject<HTMLDivElement>;
+};
+
+function About({ aboutRef }: AboutProps) {
   return (
-    <article className="container__About">
+    <article ref={aboutRef} className="container__About">
       <h3 id={routes.About}>{appData.about_title}</h3>
       <p className="text__About">
         {appData.text1_1About} &nbsp;

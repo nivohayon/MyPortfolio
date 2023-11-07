@@ -9,23 +9,36 @@ import Footer from '../../components/Footer/Footer';
 import useScrollToHashElement from '../../hooks/useScrollToHashElement';
 import Education from '../../components/Education/Education';
 import './SplitScreen.css';
+import useDetectScrollPosition from '../../hooks/useDetectScrollPosition';
 
 function SplitScreen() {
   useScrollToHashElement();
   const containerRef = useRef<HTMLDivElement>(null);
 
+  // Detect scroll position refs.
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const experienceRef = useRef<HTMLDivElement>(null);
+  const educationRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const selectedNavItemByScrollPosition = useDetectScrollPosition(
+    containerRef,
+    [aboutRef, experienceRef, educationRef, projectsRef]
+  );
+
   return (
     <div ref={containerRef} className="container__SplitScreen">
       <div className="sticky_side_container__SplitScreen">
         <Profile containerRef={containerRef} />
-        <SideNavBar />
+        <SideNavBar
+          selectedNavItemByScrollPosition={selectedNavItemByScrollPosition}
+        />
         <SocialLinks />
       </div>
       <div className="scrolly_side_container__SplitScreen">
-        <About />
-        <Experience />
-        <Education />
-        <Projects />
+        <About aboutRef={aboutRef} />
+        <Experience experienceRef={experienceRef} />
+        <Education educationRef={educationRef} />
+        <Projects projectsRef={projectsRef} />
         <Footer />
       </div>
     </div>

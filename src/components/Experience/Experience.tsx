@@ -3,9 +3,13 @@ import { routes } from '../../routes/routes';
 import Card from '../Card/Card';
 import './Experience.css';
 
-function Experience() {
+type ExperienceProps = {
+  experienceRef: React.RefObject<HTMLDivElement>;
+};
+
+function Experience({ experienceRef }: ExperienceProps) {
   return (
-    <article className="container__Experience">
+    <article ref={experienceRef} className="container__Experience">
       <h3 id={routes.Experience}>{appData.titleExperience}</h3>
       {appData.experiences.map((item) => {
         return <Card key={item.id} data={item} />;

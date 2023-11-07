@@ -10,26 +10,36 @@ const navItems = [
   routes.Projects,
 ];
 
-function SideNavBar() {
+type SideNavBarProps = {
+  selectedNavItemByScrollPosition: number;
+};
+
+function SideNavBar({ selectedNavItemByScrollPosition }: SideNavBarProps) {
   const { hash } = useLocation();
 
   return (
     <nav className="container__SideNavBar">
       <ul className="ul__SideNavBar">
-        {navItems.map((item) => {
+        {navItems.map((item, index) => {
           return (
             <li key={item}>
               <a className="a___SideNavBar" href={`#${item}`}>
                 <span
                   className={combineClasses(
                     'dash__SideNavBar',
-                    hash === `#${item}` ? ' selected_dash__SideNavBar' : ''
+                    hash === `#${item}` ||
+                      selectedNavItemByScrollPosition === index
+                      ? ' selected_dash__SideNavBar'
+                      : ''
                   )}
                 />
                 <span
                   className={combineClasses(
                     'a_span_text__SideNavBar',
-                    hash === `#${item}` ? ' selected_text__SideNavBar' : ''
+                    hash === `#${item}` ||
+                      selectedNavItemByScrollPosition === index
+                      ? ' selected_text__SideNavBar'
+                      : ''
                   )}
                 >
                   {item}
