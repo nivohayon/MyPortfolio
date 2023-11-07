@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ArrowIconSVG from '../../assets/arrow_icon.svg?react';
+import ArrowIconSVG from '../../assets/icons/arrow_icon.svg?react';
 import { combineClasses } from '../../utils/combineClasses';
 import './LinkWithArrow.css';
 

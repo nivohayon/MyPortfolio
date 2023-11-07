@@ -1,7 +1,7 @@
 import LinkWithArrow from '../../components/LinkWithArrow/LinkWithArrow';
 import { appData } from '../../data/appData';
 import { routes } from '../../routes/routes';
-import ArrowIconSVG from '../../assets/arrow_icon.svg?react';
+import ArrowIconSVG from '../../assets/icons/arrow_icon.svg?react';
 import SkillTag from '../../components/SkillTag/SkillTag';
 import './Archive.css';
 

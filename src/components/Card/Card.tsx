@@ -1,11 +1,11 @@
 import LinkItem from '../LinkItem/LinkItem';
 import SkillTag from '../SkillTag/SkillTag';
-import ArrowIconSVG from '../../assets/arrow_icon.svg?react';
-import DownloadIconSVG from '../../assets/download_icon.svg?react';
+import ArrowIconSVG from '../../assets/icons/arrow_icon.svg?react';
+import DownloadIconSVG from '../../assets/icons/download_icon.svg?react';
 import { IExperience, IProject } from '../../types';
 import { useNavigate } from 'react-router-dom';
 import { routes } from '../../routes/routes';
-import ProjectPlaceholderImg from '../../assets/project_placeholder.jpg';
+import ProjectPlaceholderImg from '../../assets/icons/project_placeholder.jpg';
 import { appData } from '../../data/appData';
 import { combineClasses } from '../../utils/combineClasses';
 import './Card.css';

@@ -1,5 +1,5 @@
-import SunIconSVG from '../../assets/sun_icon.svg?react';
-import MoonIconSVG from '../../assets/moon_icon.svg?react';
+import SunIconSVG from '../../assets/icons/sun_icon.svg?react';
+import MoonIconSVG from '../../assets/icons/moon_icon.svg?react';
 import { useContext, useEffect } from 'react';
 import Store from '../../store';
 import { setTheme } from '../../store/actions/themeActions';

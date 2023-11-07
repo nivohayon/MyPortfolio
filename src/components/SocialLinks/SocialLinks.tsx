@@ -1,6 +1,6 @@
-import GitHubSVG from '../../assets/github_icon.svg?react';
-import InstagramSVG from '../../assets/instagram_icon.svg?react';
-import LinkedInSVG from '../../assets/linkedin_icon.svg?react';
+import GitHubSVG from '../../assets/icons/github_icon.svg?react';
+import InstagramSVG from '../../assets/icons/instagram_icon.svg?react';
+import LinkedInSVG from '../../assets/icons/linkedin_icon.svg?react';
 import { appData } from '../../data/appData';
 import './SocialLinks.css';
 

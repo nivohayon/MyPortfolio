@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import LinkChainSVG from '../../assets/link_chain.svg?react';
+import LinkChainSVG from '../../assets/icons/link_chain.svg?react';
 import { routes } from '../../routes/routes';
 import './LinkItem.css';
 
