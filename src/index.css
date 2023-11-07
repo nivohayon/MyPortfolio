@@ -36,6 +36,7 @@
   --skillTagTextColor-dark: var(--green-dark);
   --footerTextHoverColor-dark: var(--green-dark);
   --archiveArrowIconColor-dark: var(--primaryColor-dark);
+  --archiveBorderColor-dark: rgba(203, 213, 225, 0.2);
 
   /* Variables - Light Mode */
   --primaryColor-light: rgba(34, 34, 34, 0.87);
@@ -67,6 +68,7 @@
   --skillTagTextColor-light: rgb(0 114 96);
   --footerTextHoverColor-light: var(--primaryColor-light);
   --archiveArrowIconColor-light: var(--primaryColor-light);
+  --archiveBorderColor-light: rgb(203, 213, 225);
 }
 
 body[data-theme='dark'] {
@@ -99,6 +101,7 @@ body[data-theme='dark'] {
   --skillTagTextColor: var(--skillTagTextColor-dark);
   --footerTextHoverColor: var(--footerTextHoverColor-dark);
   --archiveArrowIconColor: var(--archiveArrowIconColor-dark);
+  --archiveBorderColor: var(--archiveBorderColor-dark);
 }
 
 body[data-theme='light'] {
@@ -131,6 +134,7 @@ body[data-theme='light'] {
   --skillTagTextColor: var(--skillTagTextColor-light);
   --footerTextHoverColor: var(--footerTextHoverColor-light);
   --archiveArrowIconColor: var(--archiveArrowIconColor-light);
+  --archiveBorderColor: var(--archiveBorderColor-light);
 }
 
 * {
