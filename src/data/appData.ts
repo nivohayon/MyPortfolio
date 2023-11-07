@@ -86,7 +86,7 @@ export const appData = {
       until: '2021',
       title: 'Software Engineering at Ruppin',
       description:
-        'I Majored in Software Engineering, Syllabus: Front end technologies: React, JavaScript, HTML, and CSS. Back end technologies: Express.js and C# Web API. Object-oriented programming, Data structures, Algorithms and Secured development, using C#. Mobile apps development using React Native and Java in Android Studio. Databases technologies: MSSQL, MongoDB, and Firebase Firestore. Other technologies: Python, Cyber, System analysis.',
+        'I Majored in Software Engineering with an average grade of 90. Here is my syllabus: Front end technologies: React, JavaScript, HTML, and CSS. Back end technologies: Express.js and C# Web API. Object-oriented programming, Data structures, Algorithms and Secured development, using C#. Mobile apps development using React Native and Java in Android Studio. Databases technologies: MSSQL, MongoDB, and Firebase Firestore. Other technologies: Python, Cyber, System analysis.',
       mainLink: 'https://mtr.ruppin.tech/megamot/computers/',
       skills: [
         'React',
