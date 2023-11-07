@@ -8,6 +8,7 @@
   border: 1px solid transparent;
   border-radius: 10px;
   text-decoration: none;
+  transition: all 600ms;
 }
 
 .projects_container__Card {
