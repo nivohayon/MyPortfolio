@@ -29,7 +29,7 @@ function Footer() {
         {appData.usingFooter}
         <InlineLink text={appData.viteText} link={appData.viteLink} />
         {appData.deployedWithFooter}
-        <InlineLink text={appData.ghPagesText} link={appData.ghPagesLink} />
+        <InlineLink text={appData.vercelText} link={appData.vercelLink} />
         {appData.fontUsedFooter}
         <InlineLink text={appData.interText} link={appData.interLink} />
       </span>

@@ -175,11 +175,11 @@ export const appData = {
   ],
 
   // Archive
-  yearArchive:"Year",
-  projectArchive:"Project",
-  madeAtArchive:"Made at",
-  builtWithArchive:"Built with",
-  linkArchive:"Link",
+  yearArchive: 'Year',
+  projectArchive: 'Project',
+  madeAtArchive: 'Made at',
+  builtWithArchive: 'Built with',
+  linkArchive: 'Link',
   backToHomeLinkText: 'Back Home',
   archiveTitle: 'All Projects',
 
@@ -200,8 +200,8 @@ export const appData = {
   viteText: 'Vite',
   viteLink: 'https://vitejs.dev/',
   deployedWithFooter: ', deployed with ',
-  ghPagesText: 'GitHub Pages.',
-  ghPagesLink: 'https://pages.github.com/',
+  vercelText: 'Vercel. ',
+  vercelLink: 'https://vercel.com/',
   fontUsedFooter: 'The font family used is ',
   interText: 'Inter.',
   interLink: 'https://fonts.google.com/specimen/Inter',
