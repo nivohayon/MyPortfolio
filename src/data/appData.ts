@@ -42,75 +42,37 @@ export const appData = {
   experiences: [
     {
       id: 1,
-      from: '2018',
-      until: 'present',
-      title: 'Fullstack developer',
+      from: 'Jan 2022',
+      until: 'Present',
+      title: 'Fullstack Developer at MSAPPS',
       description:
-        'Developed and styled interactive web apps for Apple Music, including the UI of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.',
-      mainLink: 'https://www.github.com/example_main_link',
+        "As a full stack developer, I specialize in creating mobile and web applications using technologies like React, React Native, Node.js, Express, MySQL, and MongoDB. I've undertaken projects in the IoT and blockchain domains, though my expertise is primarily in application development. I also have some experience with AWS cloud services.",
+      mainLink: 'https://msapps.mobi/',
       links: [
         {
-          title: 'Github',
-          url: 'https://www.github.com/test1',
+          title: 'Android App - Tappster',
+          url: 'https://play.google.com/store/apps/details?id=com.beerastation',
         },
         {
-          title: 'Youtube',
-          url: 'https://www.github.com/test2',
+          title: 'IOS App - Tappster',
+          url: 'https://apps.apple.com/tr/app/tappster/id1639085750',
         },
         {
-          title: 'Play Store',
-          url: 'https://www.github.com/test3',
+          title: 'Hypersloths',
+          url: 'https://opensea.io/collection/hypersloths-rdy-labs',
         },
       ],
-      skills: ['React', 'React Native', 'SCSS', 'Typescript', 'ExpressJS'],
-    },
-    {
-      id: 2,
-      from: '2018',
-      until: 'present',
-      title: 'Fullstack developer',
-      description:
-        'Developed and styled interactive web apps for Apple Music, including the UI of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.',
-      mainLink: 'https://www.github.com/example_main_link',
-      links: [
-        {
-          title: 'Github',
-          url: 'https://www.github.com/test4',
-        },
-        {
-          title: 'Youtube',
-          url: 'https://www.github.com/test5',
-        },
-        {
-          title: 'Play Store',
-          url: 'https://www.github.com/test6',
-        },
+      skills: [
+        'React',
+        'React Native',
+        'Node.js',
+        'Express.js',
+        'MySQL',
+        'MongoDB',
+        'Typescript',
+        'AWS',
+        'Solidity',
       ],
-      skills: ['React', 'React Native', 'SCSS', 'Typescript', 'ExpressJS'],
-    },
-    {
-      id: 3,
-      from: '2018',
-      until: 'present',
-      title: 'Fullstack developer',
-      description:
-        'Developed and styled interactive web apps for Apple Music, including the UI of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.',
-      mainLink: 'https://www.github.com/example_main_link',
-      links: [
-        {
-          title: 'Github',
-          url: 'https://www.github.com/test7',
-        },
-        {
-          title: 'Youtube',
-          url: 'https://www.github.com/test8',
-        },
-        {
-          title: 'Play Store',
-          url: 'https://www.github.com/test9',
-        },
-      ],
-      skills: ['React', 'React Native', 'SCSS', 'Typescript', 'ExpressJS'],
     },
   ],
 
