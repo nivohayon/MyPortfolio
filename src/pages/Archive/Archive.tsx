@@ -4,6 +4,7 @@ import { routes } from '../../routes/routes';
 import ArrowIconSVG from '../../assets/icons/arrow_icon.svg?react';
 import SkillTag from '../../components/SkillTag/SkillTag';
 import './Archive.css';
+import { combineClasses } from '../../utils/combineClasses';
 
 function Archive() {
   return (
@@ -33,12 +34,17 @@ function Archive() {
                 </td>
                 <td>
                   <a
-                    className="title_text_container__Archive"
+                    className={combineClasses(
+                      'title_text_container__Archive',
+                      project.mainLink ? '' : 'missingLink_a__Archive'
+                    )}
                     href={project.mainLink}
                     target="_blank"
                   >
                     <span className="title_text__Archive">{project.title}</span>
-                    <ArrowIconSVG className="title_text_arrow__Archive" />
+                    {project.mainLink && (
+                      <ArrowIconSVG className="title_text_arrow__Archive" />
+                    )}
                   </a>
                 </td>
                 <td>
@@ -56,7 +62,9 @@ function Archive() {
                     <span className="mainLink_text__Archive">
                       {project.mainLink}
                     </span>
-                    <ArrowIconSVG className="mainLink_arrow_icon__Archive" />
+                    {project.mainLink && (
+                      <ArrowIconSVG className="mainLink_arrow_icon__Archive" />
+                    )}
                   </div>
                 </td>
               </tr>

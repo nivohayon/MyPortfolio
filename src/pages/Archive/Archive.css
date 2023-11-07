@@ -64,6 +64,10 @@ td:nth-child(5) {
   color: var(--primaryColor);
 }
 
+.missingLink_a__Archive {
+  pointer-events: none;
+}
+
 .title_text_container__Archive:hover .title_text__Archive {
   color: var(--linkItemChainTextHoverColor);
 }
