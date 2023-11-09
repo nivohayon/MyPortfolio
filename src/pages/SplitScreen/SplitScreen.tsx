@@ -22,7 +22,7 @@ function SplitScreen() {
   const projectsRef = useRef<HTMLDivElement>(null);
   const selectedNavItemByScrollPosition = useDetectScrollPosition(
     containerRef,
-    [aboutRef, experienceRef, educationRef, projectsRef]
+    [aboutRef, educationRef, experienceRef, projectsRef]
   );
 
   return (
@@ -36,8 +36,8 @@ function SplitScreen() {
       </div>
       <div className="scrolly_side_container__SplitScreen">
         <About aboutRef={aboutRef} />
-        <Experience experienceRef={experienceRef} />
         <Education educationRef={educationRef} />
+        <Experience experienceRef={experienceRef} />
         <Projects projectsRef={projectsRef} />
         <Footer />
       </div>

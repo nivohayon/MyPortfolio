@@ -5,8 +5,8 @@ import './SideNavBar.css';
 
 const navItems = [
   routes.About,
-  routes.Experience,
   routes.Education,
+  routes.Experience,
   routes.Projects,
 ];
 
