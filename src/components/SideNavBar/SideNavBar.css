@@ -27,7 +27,7 @@
   width: 35px;
   height: 1px;
   background-color: var(--navBarDashColor);
-  transition: width 100ms;
+  transition: width 300ms;
 }
 
 .a_span_text__SideNavBar {

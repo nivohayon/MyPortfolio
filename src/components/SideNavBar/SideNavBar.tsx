@@ -1,4 +1,3 @@
-import { useLocation } from 'react-router-dom';
 import { routes } from '../../routes/routes';
 import { combineClasses } from '../../utils/combineClasses';
 import './SideNavBar.css';
@@ -15,8 +14,6 @@ type SideNavBarProps = {
 };
 
 function SideNavBar({ selectedNavItemByScrollPosition }: SideNavBarProps) {
-  const { hash } = useLocation();
-
   return (
     <nav className="container__SideNavBar">
       <ul className="ul__SideNavBar">
@@ -27,8 +24,7 @@ function SideNavBar({ selectedNavItemByScrollPosition }: SideNavBarProps) {
                 <span
                   className={combineClasses(
                     'dash__SideNavBar',
-                    hash === `#${item}` ||
-                      selectedNavItemByScrollPosition === index
+                    selectedNavItemByScrollPosition === index
                       ? ' selected_dash__SideNavBar'
                       : ''
                   )}
@@ -36,8 +32,7 @@ function SideNavBar({ selectedNavItemByScrollPosition }: SideNavBarProps) {
                 <span
                   className={combineClasses(
                     'a_span_text__SideNavBar',
-                    hash === `#${item}` ||
-                      selectedNavItemByScrollPosition === index
+                    selectedNavItemByScrollPosition === index
                       ? ' selected_text__SideNavBar'
                       : ''
                   )}
