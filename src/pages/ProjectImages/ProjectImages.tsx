@@ -29,22 +29,23 @@ function ProjectImages() {
             const imageUrl = `${baseURL}${projectName}/${img.name}`;
 
             return (
-              <a
-                key={img.name}
-                href={imageUrl}
-                target="_blank"
-                title="Open Image in New Tab"
-                className="img_container__ProjectImages"
-              >
-                <h1 className="screenshot_title__ProjectImages">
+              <div key={img.name} className="image_item__ProjectImages">
+                <h3 className="screenshot_title__ProjectImages">
                   {removeFileExtension(img.name)}
-                </h1>
-                <img
-                  className="img__ProjectImages"
-                  src={img.data}
-                  alt="project screenshot"
-                />
-              </a>
+                </h3>
+                <a
+                  href={imageUrl}
+                  target="_blank"
+                  title="Open Image in New Tab"
+                  className="img_container__ProjectImages"
+                >
+                  <img
+                    className="img__ProjectImages"
+                    src={img.data}
+                    alt="project screenshot"
+                  />
+                </a>
+              </div>
             );
           })
         ) : (

@@ -23,9 +23,16 @@
   margin-bottom: 80px;
 }
 
+.image_item__ProjectImages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  flex-basis: 80%;
+  max-width: 80%;
+}
+
 .img_container__ProjectImages {
-  width: 40%;
-  height: 40%;
   cursor: pointer;
   text-decoration: none;
   color: var(--primaryColor);
@@ -39,7 +46,7 @@
 .img__ProjectImages {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -47,10 +54,18 @@
   .container__ProjectImages {
     padding: 48px;
   }
+  .image_item__ProjectImages {
+    flex-basis: 65%;
+    max-width: 65%;
+  }
 }
 
 @media (min-width: 1024px) {
   .container__ProjectImages {
     padding: 96px;
+  }
+  .image_item__ProjectImages {
+    flex-basis: 55%;
+    max-width: 55%;
   }
 }
