@@ -3,8 +3,8 @@ import { appData } from '../../data/appData';
 import { routes } from '../../routes/routes';
 import ArrowIconSVG from '../../assets/icons/arrow_icon.svg?react';
 import SkillTag from '../../components/SkillTag/SkillTag';
-import './Archive.css';
 import { combineClasses } from '../../utils/combineClasses';
+import './Archive.css';
 
 function Archive() {
   return (

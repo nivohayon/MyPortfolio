@@ -8,8 +8,8 @@ import Projects from '../../components/Projects/Projects';
 import Footer from '../../components/Footer/Footer';
 import useScrollToHashElement from '../../hooks/useScrollToHashElement';
 import Education from '../../components/Education/Education';
-import './SplitScreen.css';
 import useDetectScrollPosition from '../../hooks/useDetectScrollPosition';
+import './SplitScreen.css';
 
 function SplitScreen() {
   useScrollToHashElement();

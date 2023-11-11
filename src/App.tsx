@@ -6,6 +6,7 @@ import ComingSoon from './pages/ComingSoon/ComingSoon';
 import NotFound from './pages/NotFound/NotFound';
 import useMouseFlashlight from './hooks/useMouseFlashlight';
 import ThemeSwitch from './components/ThemeSwitch/ThemeSwitch';
+import ProjectImages from './pages/ProjectImages/ProjectImages';
 
 function App() {
   useMouseFlashlight();
@@ -17,6 +18,10 @@ function App() {
         <Routes>
           <Route path={routes.Home} element={<SplitScreen />} />
           <Route path={routes.Archive} element={<Archive />} />
+          <Route
+            path={`${routes.ProjectImages}/:projectName`}
+            element={<ProjectImages />}
+          />
           <Route path={routes.ComingSoon} element={<ComingSoon />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

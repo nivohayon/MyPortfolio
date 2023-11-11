@@ -20,10 +20,11 @@ export interface IExperience {
 
 export interface IProject {
   id: number;
-  previewUrl: string;
+  previewImgName: string;
   title: string;
   description: string;
   skills: string[];
-  mainLink: string;
+  mainLink?: string;
+  allImagesProjectName?: string;
   installCount: string;
 }

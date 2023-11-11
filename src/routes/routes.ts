@@ -6,4 +6,5 @@ export const routes = {
   Education: 'education',
   Projects: 'projects',
   Archive: 'archive',
+  ProjectImages: 'project-images',
 };

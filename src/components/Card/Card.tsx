@@ -19,6 +19,10 @@ function Card({ type = 'default', data }: CardProps) {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
+    if (data.allImagesProjectName) {
+      navigate(`${routes.ProjectImages}/${data.allImagesProjectName}`);
+      return;
+    }
     if (data.mainLink) {
       window.open(data.mainLink, '_blank');
     } else {
@@ -42,7 +46,9 @@ function Card({ type = 'default', data }: CardProps) {
         <div className="preview_container">
           <img
             src={
-              data?.previewUrl?.length ? data.previewUrl : ProjectPlaceholderImg
+              data?.previewImgName?.length
+                ? data.previewImgName
+                : ProjectPlaceholderImg
             }
             className="preview_img__Card"
             alt="project preview"
