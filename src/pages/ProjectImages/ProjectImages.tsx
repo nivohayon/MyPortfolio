@@ -24,28 +24,32 @@ function ProjectImages() {
         {appData.allProjects} {projectName} {appData.screenshotsProjects}
       </h1>
       <div className="images_container__ProjectImages">
-        {images.map((img) => {
-          const imageUrl = `${baseURL}${projectName}/${img.name}`;
+        {images.length > 0 ? (
+          images.map((img) => {
+            const imageUrl = `${baseURL}${projectName}/${img.name}`;
 
-          return (
-            <a
-              key={img.name}
-              href={imageUrl}
-              target="_blank"
-              title="Open Image in New Tab"
-              className="img_container__ProjectImages"
-            >
-              <h1 className="screenshot_title__ProjectImages">
-                {removeFileExtension(img.name)}
-              </h1>
-              <img
-                className="img__ProjectImages"
-                src={img.data}
-                alt="project screenshot"
-              />
-            </a>
-          );
-        })}
+            return (
+              <a
+                key={img.name}
+                href={imageUrl}
+                target="_blank"
+                title="Open Image in New Tab"
+                className="img_container__ProjectImages"
+              >
+                <h1 className="screenshot_title__ProjectImages">
+                  {removeFileExtension(img.name)}
+                </h1>
+                <img
+                  className="img__ProjectImages"
+                  src={img.data}
+                  alt="project screenshot"
+                />
+              </a>
+            );
+          })
+        ) : (
+          <h1>Loading ...</h1>
+        )}
       </div>
     </div>
   );
