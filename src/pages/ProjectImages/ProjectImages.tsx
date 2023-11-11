@@ -20,7 +20,9 @@ function ProjectImages() {
         className="back_home_text__ProjectImages"
         reversed
       />
-      <h1 className="title__Archive">{appData.archiveTitle}</h1>
+      <h1 className="title__ProjectImages">
+        {appData.allProjects} {projectName} {appData.screenshotsProjects}
+      </h1>
       <div className="images_container__ProjectImages">
         {images.map((img) => {
           const imageUrl = `${baseURL}${projectName}/${img.name}`;

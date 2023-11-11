@@ -8,6 +8,11 @@
   color: var(--green);
 }
 
+.title__ProjectImages {
+  font-size: 30px;
+  margin-top: 5px;
+}
+
 .images_container__ProjectImages {
   display: flex;
   justify-content: center;

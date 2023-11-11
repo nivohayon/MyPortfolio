@@ -97,6 +97,8 @@ export const appData = {
   titleProjects: 'Projects',
   installsCountText: 'Installs',
   viewFullProjectsArchiveText: 'View Full Project Archive',
+  allProjects: 'All',
+  screenshotsProjects: 'Screenshots',
   projects: [
     {
       id: 1,
@@ -143,7 +145,7 @@ export const appData = {
       title: 'My Store',
       description: 'A website for posting second hand products for sale.',
       skills: ['React', 'C# .NET WEB API', 'MSSQL', 'SCSS'],
-      allImagesProjectName: 'MyStore',
+      allImagesProjectName: 'My Store',
       year: 2021,
       madeAt: 'Ruppin',
     },
@@ -160,7 +162,7 @@ export const appData = {
         'Java For Android',
         'Firebase',
       ],
-      allImagesProjectName: 'PantryRecipes',
+      allImagesProjectName: 'Pantry Recipes',
       year: 2021,
       madeAt: 'Ruppin',
     },
