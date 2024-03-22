@@ -78,6 +78,7 @@
 .description__Card {
   font-size: 16px;
   color: var(--grey);
+  white-space: pre-line;
 }
 
 .skills_container__Card {

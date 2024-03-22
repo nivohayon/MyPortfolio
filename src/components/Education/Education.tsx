@@ -11,9 +11,11 @@ function Education({ educationRef }: EducationProps) {
   return (
     <article ref={educationRef} className="container__Education">
       <h3 id={routes.Education}>{appData.titleEducation}</h3>
-      {appData.educations.map((item) => {
-        return <Card key={item.id} data={item} />;
-      })}
+      <div className="cards_container__Education">
+        {appData.educations.map((item) => {
+          return <Card key={item.id} data={item} />;
+        })}
+      </div>
     </article>
   );
 }

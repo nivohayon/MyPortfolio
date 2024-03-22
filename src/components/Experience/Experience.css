@@ -3,3 +3,8 @@
   flex-direction: column;
   gap: 20px;
 }
+
+.cards_container__Experience {
+  display: flex;
+  flex-direction: column-reverse;
+}

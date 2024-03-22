@@ -3,9 +3,9 @@ import { baseURL } from '../api/instance';
 export const appData = {
   // Profile
   nameProfile: 'Niv Ohayon',
-  subtitleProfile: 'Fullstack Developer at ',
-  workPlaceName: 'MSAPPS',
-  workPlaceLink: 'https://msapps.mobi/',
+  subtitleProfile: 'Team Leader at ',
+  workPlaceName: 'Tappster',
+  workPlaceLink: 'https://www.linkedin.com/company/tappster/',
   descriptionProfile: 'I Build applications for web and mobile from scratch ',
   viewFullResumeText: 'View Full Resumé',
   viewFullResumeLink:
@@ -30,7 +30,7 @@ export const appData = {
   text2_1About:
     'My main focus these days is learning embedded and electronics. In my free time, I am learning new technologies, and working on new projects.',
   text3About:
-    "When I'm not at the computer, I'm usually hanging out with my girlfriend, working out at the gym, watching TV, or meeting with friends.",
+    "When I'm not at the computer, I'm usually hanging out with my girlfriend, working out at the gym, watching TV, or meet with friends.",
 
   // Links
   github_link: 'https://github.com/nivohayon',
@@ -45,10 +45,10 @@ export const appData = {
     {
       id: 1,
       from: 'Jan 2022',
-      until: 'Present',
+      until: 'Jan 2024',
       title: 'Fullstack Developer at MSAPPS',
-      description:
-        "As a full stack developer, I specialize in creating mobile and web applications using technologies like React, React Native, Node.js, Express, MySQL, and MongoDB. I've undertaken projects in the IoT and blockchain domains, though my expertise is primarily in application development. I also have some experience with AWS cloud services.",
+      description: `As a full stack developer, I focus on crafting mobile and web applications utilizing tools like React, React Native, Node.js, Express, MySQL, and MongoDB.
+        While I've worked on projects within IoT and blockchain realms, my main expertise lies in application development. Additionally, I possess some proficiency in AWS cloud services.`,
       mainLink: 'https://msapps.mobi/',
       skills: [
         'React',
@@ -63,6 +63,23 @@ export const appData = {
         'Git',
       ],
     },
+    {
+      id: 2,
+      from: 'Feb 2024',
+      until: 'Present',
+      title: 'Team Leader at Tappster',
+      description: `As a team leader, I handle all management responsibilities for our system, such as defining work methods, training new team members, assigning project tasks, and developing features and logic.`,
+      mainLink: 'https://www.linkedin.com/company/tappster/',
+      skills: [
+        'React',
+        'React Native',
+        'Node.js',
+        'MySQL',
+        'Typescript',
+        'AWS',
+        'Git',
+      ],
+    },
   ],
 
   // Education
@@ -73,8 +90,14 @@ export const appData = {
       from: '2019',
       until: '2021',
       title: 'Software Engineering at Ruppin',
-      description:
-        'I Majored in Software Engineering with an average grade of 90. Here is my syllabus: Front end technologies: React, JavaScript, HTML, and CSS. Back end technologies: Express.js and C# Web API. Object-oriented programming, Data structures, Algorithms and Secured development, using C#. Mobile apps development using React Native and Java in Android Studio. Databases technologies: MSSQL, MongoDB, and Firebase Firestore. Other technologies: Python, Cyber, System analysis.',
+      description: `I graduated with a Software Engineering major, achieving an average grade of 90.
+      
+        My coursework covered a wide range of subjects, including: Front end technologies like React, JavaScript, HTML, and CSS.
+        Back end technologies such as Express.js and C# Web API.
+        Object-oriented programming, Data structures, Algorithms, and Secured development, predominantly using C#.
+        Mobile app development utilizing React Native and Java in Android Studio.
+        Database technologies like MSSQL, MongoDB, and Firebase Firestore.
+        Additional exposure to Python, Cybersecurity, and System analysis.`,
       mainLink: 'https://mtr.ruppin.tech/megamot/computers/',
       skills: [
         'React',
@@ -102,28 +125,33 @@ export const appData = {
   projects: [
     {
       id: 1,
-      previewImgName: `${baseURL}ProjectsPreviews/tappster.webp`,
-      title: 'Tappster',
+      previewImgName: `${baseURL}ProjectsPreviews/pantry-recipes.jpeg`,
+      title: 'Pantry Recipes',
       description:
-        'An app that allows you to scan a barcode and start to pour beer. the app communicates with an IoT device using AWS and if authorized the user can pour beer.',
-      skills: ['React', 'React Native', 'AWS', 'MySQL', 'SCSS'],
-      links: [
-        {
-          title: 'Android - Tappster',
-          url: 'https://play.google.com/store/apps/details?id=com.beerastation',
-        },
-        {
-          title: 'IOS - Tappster',
-          url: 'https://apps.apple.com/tr/app/tappster/id1639085750',
-        },
+        'Find recipes based on what you have in the kitchen. I built the same app in two different technologies, one by using Java and Firebase, the other by using React Native and C# Web API.',
+      skills: [
+        'React Native',
+        'C# .NET WEB API',
+        'MSSQL',
+        'Java For Android',
+        'Firebase',
       ],
-      installCount: '1200+',
-      mainLink: 'https://www.linkedin.com/company/tappster/',
-      year: 2022,
-      madeAt: 'MSAPPS',
+      allImagesProjectName: 'Pantry Recipes',
+      year: 2021,
+      madeAt: 'Ruppin',
     },
     {
       id: 2,
+      previewImgName: `${baseURL}ProjectsPreviews/my-store.jpeg`,
+      title: 'My Store',
+      description: 'A website for posting second hand products for sale.',
+      skills: ['React', 'C# .NET WEB API', 'MSSQL', 'SCSS'],
+      allImagesProjectName: 'My Store',
+      year: 2021,
+      madeAt: 'Ruppin',
+    },
+    {
+      id: 3,
       previewImgName: `${baseURL}ProjectsPreviews/hypersloths.jpeg`,
       title: 'HyperSloths',
       description:
@@ -140,31 +168,47 @@ export const appData = {
       madeAt: 'MSAPPS',
     },
     {
-      id: 3,
-      previewImgName: `${baseURL}ProjectsPreviews/my-store.jpeg`,
-      title: 'My Store',
-      description: 'A website for posting second hand products for sale.',
-      skills: ['React', 'C# .NET WEB API', 'MSSQL', 'SCSS'],
-      allImagesProjectName: 'My Store',
-      year: 2021,
-      madeAt: 'Ruppin',
+      id: 4,
+      previewImgName: `${baseURL}ProjectsPreviews/tappster.webp`,
+      title: 'Tappster',
+      description:
+        'An app that allows you to scan a barcode and start to pour beer. the app communicates with an IoT device using AWS and if authorized the user can pour beer.',
+      skills: ['React', 'React Native', 'AWS', 'MySQL', 'SCSS'],
+      links: [
+        {
+          title: 'Play Store',
+          url: 'https://play.google.com/store/apps/details?id=com.beerastation',
+        },
+        {
+          title: 'App Store',
+          url: 'https://apps.apple.com/us/app/tappster/id1639085750',
+        },
+      ],
+      installCount: '1200+',
+      mainLink: 'https://www.linkedin.com/company/tappster/',
+      year: 2022,
+      madeAt: 'BeeraStation',
     },
     {
-      id: 4,
-      previewImgName: `${baseURL}ProjectsPreviews/pantry-recipes.jpeg`,
-      title: 'Pantry Recipes',
-      description:
-        'Find recipes based on what you have in the kitchen. I built the same app in two different technologies, one by using Java and Firebase, the other by using React Native and C# Web API.',
-      skills: [
-        'React Native',
-        'C# .NET WEB API',
-        'MSSQL',
-        'Java For Android',
-        'Firebase',
+      id: 5,
+      previewImgName: `${baseURL}ProjectsPreviews/Tappster%20Partners%20App%20Icon.png`,
+      title: 'Tappster Partners',
+      description: `An essential companion app for technicians and operators of Tappster stations.
+      Access vital tools, From maintenance tasks to meaningful insights.`,
+      skills: ['React', 'React Native', 'AWS', 'MySQL', 'SCSS'],
+      links: [
+        {
+          title: 'Play Store',
+          url: 'https://play.google.com/store/apps/details?id=com.tappstertechnicianandoperation',
+        },
+        {
+          title: 'App Store',
+          url: 'https://apps.apple.com/us/app/tappster-partners/id6479320549',
+        },
       ],
-      allImagesProjectName: 'Pantry Recipes',
-      year: 2021,
-      madeAt: 'Ruppin',
+      mainLink: 'https://www.linkedin.com/company/tappster/',
+      year: 2022,
+      madeAt: 'BeeraStation',
     },
   ],
 

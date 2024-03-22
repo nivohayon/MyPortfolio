@@ -8,15 +8,21 @@ type ProjectsProps = {
   projectsRef: React.RefObject<HTMLDivElement>;
 };
 
-function Projects({ projectsRef }: ProjectsProps) {
-  const projectsToRender = appData.projects.slice(0, 4);
+const projectsAmountToRender = 4;
 
+function Projects({ projectsRef }: ProjectsProps) {
   return (
     <article ref={projectsRef} className="container__Projects">
       <h3 id={routes.Projects}>{appData.titleProjects}</h3>
-      {projectsToRender.map((project) => {
-        return <Card key={project.id} type="projects" data={project} />;
-      })}
+      <div className="cards_container__Projects">
+        {appData.projects.map((project, index) => {
+          if (appData.projects.length - index > projectsAmountToRender) {
+            // Render only my 4 latest projects.
+            return null;
+          }
+          return <Card key={project.id} type="projects" data={project} />;
+        })}
+      </div>
       <LinkWithArrow
         to={routes.Archive}
         label={appData.viewFullProjectsArchiveText}
