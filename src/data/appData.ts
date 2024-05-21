@@ -3,13 +3,13 @@ import { baseURL } from '../api/instance';
 export const appData = {
   // Profile
   nameProfile: 'Niv Ohayon',
-  subtitleProfile: 'Team Leader at ',
+  subtitleProfile: 'Full Stack Developer at ',
   workPlaceName: 'Tappster',
   workPlaceLink: 'https://www.linkedin.com/company/tappster/',
   descriptionProfile: 'I Build applications for web and mobile from scratch ',
   viewFullResumeText: 'View Full Resumé',
   viewFullResumeLink:
-    'https://drive.google.com/file/d/1CzqmKvHHFfM5zRVztqrG65kTg5QlxlRM/view?usp=sharing',
+    'https://drive.google.com/file/d/1_4hEihw96Yf4H_RisDwIpOVK-IeKrtoC/view?usp=sharing',
 
   // About
   about_title: 'About',
@@ -36,8 +36,6 @@ export const appData = {
   github_link: 'https://github.com/nivohayon',
   instagram_link: 'https://instagram.com/nivohayon1582',
   linkedin_link: 'https://www.linkedin.com/in/nivohayon',
-  resume_link:
-    'https://drive.google.com/file/d/1CzqmKvHHFfM5zRVztqrG65kTg5QlxlRM/view?usp=drive_link',
 
   // Experience
   titleExperience: 'Experience',
@@ -67,8 +65,9 @@ export const appData = {
       id: 2,
       from: 'Feb 2024',
       until: 'Present',
-      title: 'Team Leader at Tappster',
-      description: `As a team leader, I handle all management responsibilities for our system, such as defining work methods, training new team members, assigning project tasks, and developing features and logic.`,
+      title: 'Full Stack Developer at Tappster',
+      description:
+        'As a full stack developer I define work flows, train new team members, create tasks, and develop new features and business logic.',
       mainLink: 'https://www.linkedin.com/company/tappster/',
       skills: [
         'React',
