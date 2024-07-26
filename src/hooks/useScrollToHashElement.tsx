@@ -14,6 +14,10 @@ function useScrollToHashElement() {
       }
     };
 
+    if (document.readyState === 'complete') {
+      listener();
+      return;
+    }
     window.addEventListener('load', listener);
 
     return () => {
