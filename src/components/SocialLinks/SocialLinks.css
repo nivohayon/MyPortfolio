@@ -1,4 +1,14 @@
 .container__SocialLinks {
   display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.icons_container__SocialLinks {
+  display: flex;
   gap: 30px;
+}
+
+.updated_at__SocialLinks {
+  color: var(--aboutTextColor);
 }

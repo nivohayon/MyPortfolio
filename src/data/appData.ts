@@ -1,6 +1,7 @@
 import { baseURL } from '../api/instance';
 
 export const appData = {
+  updatedAt: 'Last updated at 26.07.2024',
   // Profile
   nameProfile: 'Niv Ohayon',
   subtitleProfile: 'Full Stack Developer at ',

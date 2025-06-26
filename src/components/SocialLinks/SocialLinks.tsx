@@ -9,15 +9,18 @@ const ICON_SIZE = 32;
 function SocialLinks() {
   return (
     <div className="container__SocialLinks">
-      <a href={appData.github_link} target="_blank" rel="noreferrer">
-        <GitHubSVG width={ICON_SIZE} height={ICON_SIZE} />
-      </a>
-      <a href={appData.instagram_link} target="_blank" rel="noreferrer">
-        <InstagramSVG width={ICON_SIZE} height={ICON_SIZE} />
-      </a>
-      <a href={appData.linkedin_link} target="_blank" rel="noreferrer">
-        <LinkedInSVG width={ICON_SIZE} height={ICON_SIZE} />
-      </a>
+      <div className="icons_container__SocialLinks">
+        <a href={appData.github_link} target="_blank" rel="noreferrer">
+          <GitHubSVG width={ICON_SIZE} height={ICON_SIZE} />
+        </a>
+        <a href={appData.instagram_link} target="_blank" rel="noreferrer">
+          <InstagramSVG width={ICON_SIZE} height={ICON_SIZE} />
+        </a>
+        <a href={appData.linkedin_link} target="_blank" rel="noreferrer">
+          <LinkedInSVG width={ICON_SIZE} height={ICON_SIZE} />
+        </a>
+      </div>
+      <p className="updated_at__SocialLinks">{appData.updatedAt}</p>
     </div>
   );
 }
