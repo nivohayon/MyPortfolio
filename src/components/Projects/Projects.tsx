@@ -8,7 +8,7 @@ type ProjectsProps = {
   projectsRef: React.RefObject<HTMLDivElement>;
 };
 
-const projectsAmountToRender = 4;
+const projectsAmountToRender = 5;
 
 function Projects({ projectsRef }: ProjectsProps) {
   return (

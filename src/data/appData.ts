@@ -65,7 +65,7 @@ export const appData = {
     {
       id: 2,
       from: 'Feb 2024',
-      until: 'Present',
+      until: 'Aug 2024',
       title: 'Full Stack Developer at Tappster',
       description:
         'As a full stack developer I define work flows, train new team members, create tasks, and develop new features and business logic.',
@@ -77,6 +77,26 @@ export const appData = {
         'MySQL',
         'Typescript',
         'AWS',
+        'Git',
+      ],
+    },
+    {
+      id: 3,
+      from: 'Aug 2024',
+      until: 'Present',
+      title: 'Full Stack Developer at Aquant',
+      description:
+        'Developing and maintaining features for production mobile and web apps, Developing and maintaining backend services using Python and PostgreSQL. Fixing bugs, improving performance, and reviewing pull requests.',
+      mainLink: 'https://www.linkedin.com/company/aquant.io',
+      skills: [
+        'React',
+        'React Native (Expo & Bare)',
+        'PostgreSQL',
+        'Typescript',
+        'Python',
+        'Salesforce',
+        'Kubernetes',
+        'Azure',
         'Git',
       ],
     },
@@ -209,6 +229,36 @@ export const appData = {
       mainLink: 'https://www.linkedin.com/company/tappster/',
       year: 2022,
       madeAt: 'BeeraStation',
+    },
+    {
+      id: 6,
+      previewImgName: `${baseURL}ProjectsPreviews/aquantLogo.webp`,
+      title: 'Aquant Service Co-Pilot',
+      description: `This is one of the many projects I worked on in my role as a fullstack developer at Aquant.`,
+      skills: [
+        'React',
+        'React Native (Expo & Bare)',
+        'PostgreSQL',
+        'Typescript',
+        'Python',
+        'Salesforce',
+        'Kubernetes',
+        'Azure',
+        'Git',
+      ],
+      links: [
+        {
+          title: 'Play Store',
+          url: 'https://play.google.com/store/apps/details?id=io.aquant.app',
+        },
+        {
+          title: 'App Store',
+          url: 'https://apps.apple.com/il/app/aquant-service-co-pilot/id1492255917',
+        },
+      ],
+      mainLink: 'https://www.aquant.ai/',
+      year: 2025,
+      madeAt: 'Aquant',
     },
   ],
 
