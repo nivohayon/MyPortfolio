@@ -1,11 +1,11 @@
 import { baseURL } from '../api/instance';
 
 export const appData = {
-  updatedAt: 'Last updated at 26.06.2025',
+  updatedAt: 'Last updated at 28.06.2025',
   // Profile
   nameProfile: 'Niv Ohayon',
   subtitleProfile: 'Full Stack Developer at ',
-  workPlaceName: 'Tappster',
+  workPlaceName: 'Aquant',
   workPlaceLink: 'https://www.linkedin.com/company/tappster/',
   descriptionProfile: 'I Build applications for web and mobile from scratch ',
   viewFullResumeText: 'View Full Resumé',
