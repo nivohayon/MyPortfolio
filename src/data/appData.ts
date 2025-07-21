@@ -7,7 +7,7 @@ export const appData = {
   subtitleProfile: 'Full Stack Developer at ',
   workPlaceName: 'Aquant',
   workPlaceLink: 'https://www.linkedin.com/company/aquant.io',
-  descriptionProfile: 'Fullstack Engineer | 4+ Years Delivering Scalable Web & Mobile Solutions | React · React Native · TypeScript · Python | Cloud (AWS, Azure) | AI Development Workflows',
+  descriptionProfile: '4+ Years Of Delivering Scalable Web and Mobile Solutions',
   viewFullResumeText: 'View Full Resumé',
   viewFullResumeLink:
     'https://drive.google.com/file/d/1gHanlH9ft1Jb7IZbeMlEHHz0ytfuQ9Xl/view?usp=sharing',
