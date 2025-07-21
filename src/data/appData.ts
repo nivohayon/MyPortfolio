@@ -1,16 +1,16 @@
 import { baseURL } from '../api/instance';
 
 export const appData = {
-  updatedAt: 'Last updated at 28.06.2025',
+  updatedAt: 'Last updated at 21.07.2025',
   // Profile
   nameProfile: 'Niv Ohayon',
   subtitleProfile: 'Full Stack Developer at ',
   workPlaceName: 'Aquant',
-  workPlaceLink: 'https://www.linkedin.com/company/tappster/',
-  descriptionProfile: 'I Build applications for web and mobile from scratch ',
+  workPlaceLink: 'https://www.linkedin.com/company/aquant.io',
+  descriptionProfile: 'Fullstack Engineer | 4+ Years Delivering Scalable Web & Mobile Solutions | React · React Native · TypeScript · Python | Cloud (AWS, Azure) | AI Development Workflows',
   viewFullResumeText: 'View Full Resumé',
   viewFullResumeLink:
-    'https://drive.google.com/file/d/1_4hEihw96Yf4H_RisDwIpOVK-IeKrtoC/view?usp=sharing',
+    'https://drive.google.com/file/d/1gHanlH9ft1Jb7IZbeMlEHHz0ytfuQ9Xl/view?usp=sharing',
 
   // About
   about_title: 'About',
@@ -29,9 +29,9 @@ export const appData = {
   about_diploma_link:
     'https://drive.google.com/file/d/1CKVcYDICAYFC7d5oJwUTsZPLLkGpb6DY/view?usp=sharing',
   text2_1About:
-    'My main focus these days is learning embedded and electronics for personal projects as a hobby. In my free time, I am learning new technologies, and working on personal projects.',
+    'My main focus these days is learning embedded and electronics for personal projects as a hobby. In my free time, I play video games and my racing simulator, learning new technologies, and working on personal projects.',
   text3About:
-    "When I'm not at the computer, I'm usually hanging out with my girlfriend, working out at the gym, watching TV, or going out with friends.",
+    "When I'm not at the computer, I'm usually hanging out with my girlfriend, working out at the gym, watching TV, and going out with friends.",
 
   // Links
   github_link: 'https://github.com/nivohayon',
