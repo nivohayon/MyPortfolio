@@ -24,7 +24,7 @@ export const appData = {
     'Fast-forward to 2019, I started learning Software Engineering at ',
   about_ruppin_link_text: 'Ruppin Technological College. ',
   about_ruppin_link: 'https://mtr.ruppin.tech/megamot/computers/',
-  text1_5About: 'In 2021 I graduated with an average grade of 90 and got my ',
+  text1_5About: 'In 2021 I graduated with a GPA of 94 and got my ',
   about_diploma_link_text: 'Diploma.',
   about_diploma_link:
     'https://drive.google.com/file/d/1CKVcYDICAYFC7d5oJwUTsZPLLkGpb6DY/view?usp=sharing',
